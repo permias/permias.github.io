@@ -1,0 +1,314 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include body-font;
+}
+
+hr {
+  border-color: $theme-primary;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+hr.light {
+  border-color: white;
+}
+
+hr.accent {
+  border-color: $accent-primary-variant;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include headline-font;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background-color: $theme-primary;
+}
+
+.bg-accent {
+  background-color: $accent-primary;
+}
+
+.bg-accent-variant {
+  background-color: $accent-primary-variant;
+}
+
+.bg-dark {
+  background-color: $theme-dark;
+  color: white;
+}
+
+.text-faded {
+  color: rgba(white, .7);
+}
+
+section {
+  padding: 5em 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// Navigation
+.navbar{
+  transition: all 0.4s;
+  @include nav-font;
+
+  &.navbar-default{
+    .nav-link{
+      color: white;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: darken($theme-primary, 10%);
+      text-decoration: none;
+    }
+  }
+
+  &.navbar-lighter{
+    .nav-link{
+      color: $theme-dark;
+    }
+  }
+
+  .nav-link {
+    margin: 1em 1em;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+  }
+
+  @media (min-width: 768px) {
+    a img {
+      height: 5em;
+      margin: 1em 0 0 3em;
+      position: absolute;
+    }
+  }
+
+  .nav-item .dropdown-item{
+    @include nav-font;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+    color: white;
+    padding-top: 0.5em;
+  }
+}
+
+.solid {
+  &.navbar-default{
+    background: $theme-primary;
+    a {
+      &:hover,
+      &:focus {
+        color: darken($accent-primary-variant, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+  &.navbar-lighter{
+    background: $accent-primary-variant;
+    .nav-link{
+      color: white;
+    }
+    a {
+      &:hover,
+      &:focus {
+        color: darken($theme-primary, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  a img {
+    margin: 0;
+    height: 2em;
+    position: relative;
+  }
+
+  .navbar-nav {
+    margin:  0;
+    padding: 0;
+  }
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 768px) {
+  .navbar {
+    background: $theme-primary;
+  }
+
+  a img {
+    height: 2em;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: white;
+  }
+}
+
+// Header
+header {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+
+  @include background-cover;
+  text-align: center;
+  color: black;
+}
+
+// Bootstrap Overrides
+.text-primary {
+  color: $theme-primary;
+}
+
+.text-dark {
+  color: $theme-dark;
+}
+
+.text-accent {
+  color: $accent-primary;
+}
+
+// Button Styles
+.btn-default {
+  @include button-variant($accent-primary, $accent-primary-variant,  $accent-primary-variant, $theme-primary, $accent-primary);
+}
+
+.btn-primary {
+  @include button-variant($accent-primary, $theme-primary, $theme-primary, $theme-primary, $accent-primary);
+}
+
+.btn {
+  @include headline-font;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+// Footer
+footer {
+  background-color: $theme-primary;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    img#permias-logo {
+      height: 3em;
+      float: right;
+    }
+    padding: 4em 1em 3em 1em;
+  }
+
+  @media (min-width: 768px) {
+    img#permias-logo {
+      height: 5em;
+    }
+    padding: 4em 3em 3em 3em;
+  }
+
+  #copyright,
+  .footer-link{
+    color: white;
+    @include footer-font;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #footer-email {
+    color: white;
+    @include light-font;
+    font-size: 1em;
+
+    &:hover,
+    &:focus {
+      color: darken($accent-primary-variant, 10%);
+      text-decoration: none;
+    }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: darken($accent-primary-variant, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $theme-dark;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

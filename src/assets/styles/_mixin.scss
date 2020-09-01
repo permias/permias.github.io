@@ -1,0 +1,102 @@
+@mixin transition-all()
+{
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+@mixin background-cover()
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@mixin button-variant($color, $background, $border, $hover-color, $hover-bg)
+{
+	color: $color;
+	background-color: $background;
+	border-color: $border;
+	@include transition-all;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > .dropdown-toggle & {
+		color: $hover-color;
+		background-color: $hover-bg;
+    	border-color: darken($border, 7%);
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle & {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $background;
+			border-color: $border;
+		}
+	}
+
+	.badge {
+		color: $background;
+		background-color: $color;
+	}
+}
+
+@mixin sans-serif-font()
+{
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin serif-font()
+{
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin headline-font()
+{
+	font-family: 'Eina01-Bold', sans-serif
+}
+
+@mixin subheadline-font()
+{
+	font-family: 'Eina01-SemiBold', sans-serif
+}
+
+@mixin light-font()
+{
+	font-family: 'Eina01-Light', sans-serif
+}
+
+@mixin nav-font()
+{
+  font-family: 'Eina01-SemiBold', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+@mixin footer-font()
+{
+  font-family: 'Eina01-SemiBold', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+@mixin body-font()
+{
+	font-family: 'Eina01-Regular', sans-serif
+}

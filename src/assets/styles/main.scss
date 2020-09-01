@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+$spacing-unit:     1em;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// variables.less
+$theme-primary: #ED1D25;
+$theme-dark: #000000;
+$accent-primary: #FFFFFF;
+$accent-primary-variant: #DEB82D;
+
+@font-face {
+  font-family: 'Eina01-SemiBold';
+  src: url('../fonts/Eina01-SemiBold.eot');
+  src: local('☞Eina01-SemiBold'), local('Eina01-SemiBold'),
+      url('../fonts/Eina01-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Eina01-SemiBold.woff2') format('woff2'),
+      url('../fonts/Eina01-SemiBold.woff') format('woff'),
+      url('../fonts/Eina01-SemiBold.ttf') format('truetype'),
+      url('../fonts/Eina01-SemiBold.svg#Eina01-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eina01-Light';
+  src: url('../fonts/Eina01-Light.eot');
+  src: local('☞Eina01-Light'), local('Eina01-Light'),
+      url('../fonts/Eina01-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Eina01-Light.woff2') format('woff2'),
+      url('../fonts/Eina01-Light.woff') format('woff'),
+      url('../fonts/Eina01-Light.ttf') format('truetype'),
+      url('../fonts/Eina01-Light.svg#Eina01-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eina01-Regular';
+  src: url('../fonts/Eina01-Regular.eot');
+  src: local('☞Eina01-Regular'), local('Eina01-Regular'),
+      url('../fonts/Eina01-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Eina01-Regular.woff2') format('woff2'),
+      url('../fonts/Eina01-Regular.woff') format('woff'),
+      url('../fonts/Eina01-Regular.ttf') format('truetype'),
+      url('../fonts/Eina01-Regular.svg#Eina01-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eina01-Bold';
+  src: url('../fonts/Eina01-Bold.eot');
+  src: local('☞Eina01-Bold'), local('Eina01-Bold'),
+      url('../fonts/Eina01-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Eina01-Bold.woff2') format('woff2'),
+      url('../fonts/Eina01-Bold.woff') format('woff'),
+      url('../fonts/Eina01-Bold.ttf') format('truetype'),
+      url('../fonts/Eina01-Bold.svg#Eina01-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// import partials
+@import
+  "mixin",
+  "base",
+  "pages",
+  "vendor/bootstrap",
+  "vendor/fontawesome"
+;

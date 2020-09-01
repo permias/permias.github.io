@@ -1,0 +1,53 @@
+// Homepage
+#homepage-header {
+  background-image: url('./monas-bg.jpg');
+}
+
+#homepage-content {
+  color: $accent-primary;
+
+  h2 {
+    @include subheadline-font;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  p {
+    @include light-font;
+    font-size: 0.9em;
+  }
+  div.stats{
+    text-align: center;
+    margin: 4em 0 0 0;
+  }
+  div.stat{
+    font-size: 5em;
+    @include headline-font;
+    // border: solid red;
+  }
+  div.stat-caption{
+    font-size: 0.9em;
+  }
+  #about{
+    background-color: $accent-primary-variant;
+  }
+}
+
+// About
+#about-header {
+  background: $accent-primary-variant;
+}
+
+// Contact
+#contact-info-container {
+  padding-top: 18em;
+  border: solid blue;
+}
+
+#contact-content {
+  .embassy {
+    border: solid blue;
+  }
+}
