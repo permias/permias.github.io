@@ -1,0 +1,58 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="PERMIAS Cabang"
+    tagline="Cabang-Cabang PERMIAS"
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Daftarkan Cabang anda bersama kami!',
+        href: getPermalink('https://forms.gle/bx9bQx9eRBDgLTy57')
+      },
+    ]}
+  >
+    
+  <Fragment slot="image">
+      <iframe class="airtable-embed" src="https://www.google.com/maps/d/embed?mid=1hgQeyDLLXqzxY9F8CZZbdLaPzpMN3Ts&ehbc=2E312F" 
+      frameborder="0" onmousewheel="" width="100%" height="650" 
+      style="background: transparent; border: 1px solid #ccc;"
+      ></iframe>
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="ASOSIASI WILAYAH TIMUR-LAUT"
+  >
+    <Fragment slot="image">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  
+</Layout>
