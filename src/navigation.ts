@@ -3,28 +3,28 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'About',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Overview',
+          href: getPermalink('/about/'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Our Team',
+          href: getPermalink('/about/team'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Chapters',
+          href: getPermalink('/about/chapters'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Contact Us',
+          href: getPermalink('/contact'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Resources',
       links: [
         {
           text: 'Features (Anchor Link)',
@@ -37,14 +37,6 @@ export const headerData = {
         {
           text: 'Pricing',
           href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
         },
         {
           text: 'Terms',
@@ -111,8 +103,9 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Career',
+      href: getPermalink('https://permias.karirlab.co/'),
+      target: '_blank'
     },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
