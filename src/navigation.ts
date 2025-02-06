@@ -102,10 +102,6 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'Career',
-    //   href: getPermalink('https://permias.karirlab.co/')
-    // },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
@@ -114,7 +110,7 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'SIGN UP FOR OUR NEWSLETTER', href: 'http://eepurl.com/g-RXeT' },
+        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
         { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],

@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Features2 from '~/components/widgets/Features4.astro';
 
 const metadata = {
   title: 'Contact',
@@ -66,28 +66,27 @@ const metadata = {
     ]}
   />
   <div style="margin-top: -150px; margin-bottom: 100px;">
-  <Features2 
-    items={[
-      {
-        title: 'Facebook',
-        description: '@permias.nasional',
-        icon: 'tabler:brand-facebook',
-        href: 'https://instagram.com/',
-      },
-      {
-        title: 'LinkedIn',
-        description: 'PERMIAS Nasional',
-        icon: 'tabler:brand-linkedin',
-        href: 'https://www.linkedin.com/company/permiasnasional',
-      },
-      {
-        title: 'YouTube',
-        description: 'PERMIAS Nasional',
-        icon: 'tabler:brand-youtube',
-        href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw',
-      },
-    ]}
-  />
+    <Features2
+      items={[
+        {
+          title: 'Facebook',
+          description: '@permias.nasional',
+          icon: 'tabler:brand-facebook',
+          href: 'https://instagram.com/',
+        },
+        {
+          title: 'LinkedIn',
+          description: 'PERMIAS Nasional',
+          icon: 'tabler:brand-linkedin',
+          href: 'https://www.linkedin.com/company/permiasnasional',
+        },
+        {
+          title: 'YouTube',
+          description: 'PERMIAS Nasional',
+          icon: 'tabler:brand-youtube',
+          href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw',
+        },
+      ]}
+    />
   </div>
-
 </Layout>
