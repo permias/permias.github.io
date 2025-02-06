@@ -10,8 +10,8 @@ export const headerData = {
           href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Sejarah Kami',
+          href: getPermalink('/homes/sejarahKami'),
         },
         {
           text: 'Mobile App',
@@ -24,14 +24,14 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'About',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'Main Homepage',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'Sejarah Kami',
           href: getPermalink('/services'),
         },
         {
@@ -57,31 +57,11 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: 'Resources',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Essentials',
+          href: getPermalink('/landing/Essentials'),
         },
       ],
     },

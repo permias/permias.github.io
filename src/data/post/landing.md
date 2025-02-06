@@ -73,7 +73,7 @@ Presented below are several prevalent types of Landing Pages. Each link offers a
 
 This approach ensures that you observe the best practices in action. Also, it enables you to acquire a step-by-step understanding of how to skillfully create each type.
 
-### [Lead Generation Landing Page](landing/lead-generation)
+### [Lead Generation Landing Page](landing/Embassies)
 
 **Purpose**: Designed primarily to capture user data, such as email addresses or contact details.
 

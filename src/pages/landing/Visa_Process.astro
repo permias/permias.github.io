@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Sales Landing Page Demo',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Features2 Widget ************** -->
+  <Features2
+  title="Contact the Indonesian Embassies"
+  subtitle="Explore our resources to connect with Indonesian embassies, ensuring support and guidance for your endeavors abroad."
+  columns={3}
+  items={[
+    {
+      title: 'U.S. Embassy in Indonesia',
+      description:
+        'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+      icon: 'tabler:school',
+      panelBgImage: 'https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/4.jpg',
+    },
+    {
+      title: 'Indonesian Embassy in the U.S.',
+      description:
+        'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
+      icon: 'tabler:home-star',
+      panelBgImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/1920px-Mount_Rushmore_detail_view_%28100MP%29.jpg',
+    },
+    {
+      title: 'Consulate in San Francisco',
+      description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
+      icon: 'tabler:photo',
+      panelBgImage: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Golden%20gate.jpg',
+    },
+    {
+      title: 'Consulate in Los Angeles',
+      description:
+        'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
+      icon: 'tabler:shopping-cart',
+      panelBgImage: 'https://offloadmedia.feverup.com/secretlosangeles.com/wp-content/uploads/2024/02/26040501/los-angeles-attractions.jpg',
+    },
+    {
+      title: 'Consulate in Houston',
+      description:
+        'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
+      icon: 'tabler:article',
+      panelBgImage: 'https://blog.cirquedusoleil.com/-/media/blog/fb_open_graph/brainlabs-articles/houston/bl-houston-architecture/houston_skyline_texas_tower_facebook_cover.jpg?db=web&vs=1&hash=10E2936B538E806AB522E662EE59BF00',
+    },
+    {
+      title: 'Consulate in Chicago',
+      description:
+        'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
+      icon: 'tabler:building-store',
+      panelBgImage: 'https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/chicago_000_4550_up.jpg',
+    },
+    {
+      title: 'Consulate in New York',
+      description:
+        'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
+      icon: 'tabler:arrow-big-up-lines',
+      panelBgImage: 'https://cdn-imgix.headout.com/tour/30357/TOUR-IMAGE/6cdcf542-452d-4897-beed-76cf68f154e4-1act-de005e04-05d9-4715-96b0-6a089d5c3460.jpg?auto=format&w=1222.3999999999999&h=687.6&q=90&fit=crop&ar=16%3A9&crop=faces',
+    },
+  ]}
+  />
+</Layout>
