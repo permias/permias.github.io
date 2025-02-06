@@ -1,0 +1,49 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import type { Item3 } from '~/types';  // ✅ Use Item3
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [] as Item3[],  // ✅ Explicitly define items as Item3[]
+  columns = 4,  // ✅ Now 4 columns
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <!-- ✅ Ensures 4 boxes per row -->
+  <div class={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${columns} gap-6`}>
+    {items.map((item) => (
+      <div class="border rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-900">
+        {item.image && (
+          <img 
+            src={typeof item.image === 'string' ? item.image : item.image.src} 
+            alt={typeof item.image === 'string' ? item.title ?? 'Entrepreneurship Image' : item.image.alt ?? 'Entrepreneurship Image'} 
+            class="w-full h-48 object-cover"
+            loading="lazy"
+          />
+        )}
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{item.title}</h3>
+          {item.description && (
+            <p class="text-gray-600 dark:text-gray-400 mt-2">{item.description}</p>
+          )}
+          {item.link && (
+            <p class="text-blue-500 hover:underline mt-2">
+              <a href={item.link} target="_blank">Learn More</a>
+            </p>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper>

@@ -140,6 +140,27 @@ export interface Item {
   callToAction?: CallToAction;
   image?: Image;
   href?: string;
+  panelBgImage?: string; // Added: background images
+}
+
+// ADDED NEW for EmbassiesFeature.Astro
+export interface Item2 {
+  title?: string;
+  address?: string; // Physical location
+  website?: string; // URL for website
+  contact?: string; // Phone number or email
+  image?: string | { src: string; alt?: string }; // Now supports both formats
+  classes?: Record<string, string>;
+  callToAction?: CallToAction;
+}
+
+// ADDED NEW for Scholarships.Astro
+export interface Item3 {
+  title?: string;
+  description?: string; // Short text description about the embassy or consulate
+  link?: string; // URL for more details
+  image?: string | { src: string; alt?: string }; // Supports both string URL or object format
+  classes?: Record<string, string>;
 }
 
 export interface Price {
@@ -245,7 +266,7 @@ export interface Brands extends Omit<Headline, 'classes'>, Widget {
 export interface Features extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;
-  items?: Array<Item>;
+  items?: Array<Item>;  
   columns?: number;
   defaultIcon?: string;
   callToAction1?: CallToAction;
@@ -254,6 +275,21 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
 }
+
+// ADDED FOR EmbassiesFeature.astro
+export interface Features2 extends Omit<Headline, 'classes'>, Widget {
+  image?: string | unknown;
+  video?: Video;
+  items?: Array<Item2>;  
+  columns?: number;
+  defaultIcon?: string;
+  callToAction1?: CallToAction;
+  callToAction2?: CallToAction;
+  isReversed?: boolean;
+  isBeforeContent?: boolean;
+  isAfterContent?: boolean;
+}
+
 
 export interface Faqs extends Omit<Headline, 'classes'>, Widget {
   iconUp?: string;
