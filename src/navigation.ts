@@ -146,6 +146,6 @@ export const footerData = {
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
   ],
   footNote: `
-    Made by Permias Nasional · All rights reserved.
+    Made by PERMIAS Nasional · All rights reserved.
   `,
 };
