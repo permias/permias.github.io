@@ -102,10 +102,10 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Career',
-      href: getPermalink('https://permias.karirlab.co/')
-    },
+    // {
+    //   text: 'Career',
+    //   href: getPermalink('https://permias.karirlab.co/')
+    // },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
