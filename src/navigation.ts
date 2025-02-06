@@ -82,10 +82,6 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'Career',
-    //   href: getPermalink('https://permias.karirlab.co/')
-    // },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
@@ -94,7 +90,7 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'SIGN UP FOR OUR NEWSLETTER', href: 'http://eepurl.com/g-RXeT' },
+        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
         { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],
@@ -126,6 +122,6 @@ export const footerData = {
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
   ],
   footNote: `
-    Made by Permias Nasional · All rights reserved.
+    Made by PERMIAS Nasional based on AstroWind Template · All rights reserved.
   `,
 };
