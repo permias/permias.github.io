@@ -104,8 +104,7 @@ export const headerData = {
     },
     {
       text: 'Career',
-      href: getPermalink('https://permias.karirlab.co/'),
-      target: '_blank'
+      href: getPermalink('https://permias.karirlab.co/')
     },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
@@ -114,53 +113,31 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'SIGN UP FOR OUR NEWSLETTER', href: 'http://eepurl.com/g-RXeT' },
+        { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
+        { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],
     },
     {
-      title: 'Platform',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'ABOUT US', href: '/about' },
+        { text: 'CONTACT', href: '/contact' },
+        { text: 'DONATE', href: '/donate' },
       ],
     },
     {
-      title: 'Support',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'INSTAGRAM', href: 'https://www.instagram.com/permias.nasional/'},
+        { text: 'FACEBOOK', href: 'https://www.facebook.com/permias.nasional' },
+        { text: 'LINKEDIN', href: 'https://www.linkedin.com/company/permiasnasional' },
+        { text: 'YOUTUBE', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
