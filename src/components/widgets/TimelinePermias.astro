@@ -1,0 +1,18 @@
+---
+const { id, title, subtitle, boxes = [] } = Astro.props;
+---
+
+<section id={id} class="max-w-7xl mx-auto px-6 py-12">
+  <!-- Section Header -->
+  <h2 class="text-3xl font-bold text-center mb-4">{title}</h2>
+  <p class="text-lg text-center text-gray-600 dark:text-gray-300 mb-8">{subtitle}</p>
+
+  <!-- Row Layout -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    {boxes.map((box) => (
+      <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+        <p class="text-gray-600 dark:text-gray-400 text-center">{box}</p>
+      </div>
+    ))}
+  </div>
+</section>

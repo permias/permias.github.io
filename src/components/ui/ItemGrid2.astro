@@ -8,14 +8,12 @@ const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props;
 
 const {
   container: containerClass = '',
-  // container: containerClass = "sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
   panel: panelClass = '',
   title: titleClass = '',
   description: descriptionClass = '',
   icon: defaultIconClass = 'text-primary',
 } = classes;
 ---
-
 {
   items && (
     <div
@@ -32,14 +30,23 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
+      {items.map(({ title, description, icon, callToAction, panelBgImage, classes: itemClasses = {} }) => (
         <div
           class={twMerge(
-            'relative flex flex-col intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
+            `relative flex flex-col intersect-once intersect-quarter intercept-no-queue 
+             motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade 
+             transition-transform duration-200 ease-out hover:scale-105 will-change-transform`,
             panelClass,
             itemClasses?.panel
           )}
+          style={{
+            // Add: dynamic styles to apply panel background image
+            backgroundImage: panelBgImage ? `url('${panelBgImage}')` : undefined, // when variable defined, change the tailwind class, jdi hover animation
+            backgroundSize: panelBgImage ? 'cover' : undefined,
+            backgroundPosition: panelBgImage ? 'center' : undefined,
+          }}
         >
+          
           {(icon || defaultIcon) && (
             <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
           )}

@@ -1,0 +1,45 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Image from '~/components/common/Image.astro';
+
+export interface SectionItem {
+  title: string;
+  content: { text: string; link: string }[];
+  image?: string;
+}
+
+export interface Props {
+  id?: string;
+  title?: string;
+  subtitle?: string;
+  sections?: SectionItem[];
+  classes?: Record<string, string>; // ✅ Ensure classes is a valid Record
+}
+
+const { id, title, subtitle, sections = []} = Astro.props;
+---
+
+<WidgetWrapper id={id} classes={{ container: "max-w-7xl mx-auto px-4 sm:px-6" }}>
+  <!-- Section Header -->
+  <Headline title={title} subtitle={subtitle} classes={{ text: "text-center mb-8" }} />
+
+  <!-- Research Sections -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {sections.map((section) => (
+      <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700 flex flex-col items-center">
+        {section.image && (
+          <Image src={section.image} alt={section.title} class="w-full h-48 object-cover rounded-lg mb-4" />
+        )}
+        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4 text-center">{section.title}</h3>
+        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-2 text-left">
+          {section.content.map((item) => (
+            <li>
+              <a href={item.link} class="text-blue-500 hover:underline" target="_blank">{item.text}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper>
