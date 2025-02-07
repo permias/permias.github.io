@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
-import Hero from '~/components/widgets/Hero.astro';
+import Hero from '~/components/widgets/HeroHome.astro';
 
 const metadata = {
   title: 'Home',
@@ -13,6 +12,7 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
+    tagline="Welcome to PERMIAS Nasional"
     actions={[
       {
         variant: 'primary',
@@ -30,12 +30,13 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.squarespace-cdn.com/content/v1/5c72899370468014b15d3162/1674786322600-II67DVDNVLZNNSH755EN/SEQUENCE1-4_2023.gif?format=2500w',
+      src: '~/assets/images/home-animation.gif',
       alt: 'Activity Video',
     }}
   >
     <Fragment slot="title">
-      Welcome to <span class="text-accent dark:text-white highlight">PERMIAS</span>!
+      Join the community of <span class="text-accent dark:text-white highlight">Indonesian</span> students in the United
+      States!
     </Fragment>
 
     <Fragment slot="subtitle">
