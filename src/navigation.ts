@@ -10,6 +10,10 @@ export const headerData = {
           href: getPermalink('/homes/sejarahKami'),
         },
         {
+          text: 'Our Team',
+          href: getPermalink('/about/team'),
+        },
+        {
           text: 'Chapters',
           href: getPermalink('/about/chapters'),
         },
