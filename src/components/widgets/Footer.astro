@@ -3,9 +3,8 @@ import { Icon } from 'astro-icon/components';
 // import { SITE } from 'astrowind:config';
 import { getHomePermalink } from '~/utils/permalinks';
 
-import FooterLogo from '~/assets/images/footer-logo.png';
-import FooterLogoRed from '~/assets/images/footer-logo-red.png';
-
+import FooterLogo from '~/assets/images/permias-horizontal-white.png';
+import FooterLogoRed from '~/assets/images/permias-horizontal-red.png';
 
 interface Link {
   text?: string;
@@ -62,16 +61,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         <div class="mb-2">
           <!-- <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a> -->
           <a href={getHomePermalink()} class="inline-block">
-            <img
-              src={FooterLogoRed.src}
-              alt="PERMIAS Nasional Logo"
-              class="w-auto m-auto h-20 dark:hidden"
-            />
-            <img
-              src={FooterLogo.src}
-              alt="PERMIAS Nasional Logo (Dark)"
-              class="w-auto m-auto h-20 hidden dark:block"
-            />
+            <img src={FooterLogoRed.src} alt="PERMIAS Nasional Logo" class="w-auto m-auto h-20 dark:hidden" />
+            <img src={FooterLogo.src} alt="PERMIAS Nasional Logo (Dark)" class="w-auto m-auto h-20 hidden dark:block" />
           </a>
         </div>
       </div>

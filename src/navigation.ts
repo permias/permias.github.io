@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -6,12 +6,12 @@ export const headerData = {
       text: 'About',
       links: [
         {
-          text: 'Overview',
-          href: getPermalink('/about/'),
-        },
-        {
           text: 'Sejarah Kami',
           href: getPermalink('/homes/sejarahKami'),
+        },
+        {
+          text: 'Our Team',
+          href: getPermalink('/about/team'),
         },
         {
           text: 'Chapters',
@@ -24,66 +24,14 @@ export const headerData = {
       ],
     },
     {
-      text: 'About',
-      links: [
-        {
-          text: 'Main Homepage',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Sejarah Kami',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
-    {
       text: 'Resources',
-      links: [
-        {
-          text: 'Essentials',
-          href: getPermalink('/landing/Essentials'),
-        },
-      ],
+      href: getPermalink('/landing/Essentials')
     },
-    {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
+    // {
+    //   text: 'Career',
+    //   href: getPermalink('https://permias.karirlab.co/')
+    // },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -97,17 +45,17 @@ export const footerData = {
     },
     {
       links: [
-        { text: 'ABOUT US', href: '/about' },
-        { text: 'CONTACT', href: '/contact' },
-        { text: 'DONATE', href: '/donate' },
+        { text: 'About Us', href: '#' },
+        { text: 'Contact', href: '/contact' },
+        // { text: 'Donate', href: '/donate' },
       ],
     },
     {
       links: [
-        { text: 'INSTAGRAM', href: 'https://www.instagram.com/permias.nasional/'},
-        { text: 'FACEBOOK', href: 'https://www.facebook.com/permias.nasional' },
-        { text: 'LINKEDIN', href: 'https://www.linkedin.com/company/permiasnasional' },
-        { text: 'YOUTUBE', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
+        { text: 'Instagram', href: 'https://www.instagram.com/permias.nasional/'},
+        { text: 'Facebook', href: 'https://www.facebook.com/permias.nasional' },
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/company/permiasnasional' },
+        { text: 'YouTube', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
       ],
     },
   ],
