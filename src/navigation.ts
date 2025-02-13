@@ -40,7 +40,6 @@ export const footerData = {
       links: [
         { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
-        { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],
     },
     {
