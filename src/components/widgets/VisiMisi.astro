@@ -13,7 +13,7 @@ const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [
   <!-- Grid Layout -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
     <!-- Visi Section -->
-    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 h-[450px]">
+    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto">
       <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">{titleVisi}</h3>
       <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2">
         {contentVisi.map((item) => (
@@ -23,7 +23,7 @@ const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [
     </div>
 
     <!-- Misi Section -->
-    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 h-[450px]">
+    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto">
       <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">{titleMisi}</h3>
       <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2">
         {contentMisi.map((item) => (
