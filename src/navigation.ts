@@ -92,7 +92,7 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'Join Our Mailing List', href: '#' },
+        { text: 'Join our mailing list', href: 'https://groups.google.com/g/permias-nasional' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
       ],
     },
