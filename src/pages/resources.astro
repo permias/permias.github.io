@@ -7,7 +7,7 @@ import Acedemics from '~/components/widgets/Hero4-Academics.astro';
 import ResearchSection from '~/components/widgets/ResearchSection.astro';
 // import Header from '~/components/widgets/Header.astro';
 import Scholarships from '~/components/widgets/Scholarships.astro';
-import Entrepreneurship from '~/components/widgets/Entrepreneurship.astro'; 
+import Entrepreneurship from '~/components/widgets/Entrepreneurship.astro';
 
 const metadata = {
   title: 'Resources',
@@ -15,7 +15,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-    <!-- <Fragment slot="announcement"></Fragment>
+  <!-- <Fragment slot="announcement"></Fragment>
     <Fragment slot="header">
       <Header
         links={[
@@ -40,305 +40,389 @@ const metadata = {
 
   <!-- Embassies -->
   <EmbassiesFeature
-  id="embassies"
-  title="Contact the Indonesian Embassies"
-  subtitle="Explore our resources to connect with Indonesian embassies, ensuring support and guidance for your endeavors abroad."
-  columns={3}
-  items={[
-    {
-      title: 'Embassy of the Republic of Indonesia in USA',
-      address: '2020 Massachusetts Ave NW, Washington, DC 20036',
-      website: 'https://www.embassyofindonesia.org',
-      contact: '+1 (202) 775-5200',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Indo.png?raw=true', alt: 'Embassy of Indonesia in the U.S.' },
-    },
-    {
-      title: 'Embassy of the United States in Indonesia',
-      address: 'Jl. Medan Merdeka Selatan No. 3–5, Jakarta 10110',
-      website: 'https://id.usembassy.gov',
-      contact: '+62-21-5083-1000',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-USA.jpg?raw=true', alt: 'U.S. Embassy in Indonesia' },
-    },
-    {
-      title: 'KJRI San Francisco',
-      address: '1111 Columbus Avenue, San Francisco, CA 94133',
-      website: 'https://kemlu.go.id/sanfrancisco/id',
-      contact: '+1 (415) 875 0793',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-SF.jpg?raw=true', alt: 'KJRI San Francisco' },
-    },
-    {
-      title: 'KJRI New York',
-      address: '5 E 68th St, New York, NY 10065',
-      website: 'https://kjrinewyork.org/',
-      contact: '+1 (212) 879-0600',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-NY.png?raw=true', alt: 'KJRI New York' },
-    },
-    {
-      title: 'KJRI Chicago',
-      address: '211 N Carpenter St, Chicago, IL 60607',
-      website: 'https://kemlu.go.id/chicago',
-      contact: '+1 (312) 920 1880',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Chicago.png?raw=true', alt: 'KJRI Chicago' },
-    },
-    {
-      title: 'KJRI Houston',
-      address: '10900 Richmond Avenue, Houston, TX 77042',
-      website: 'https://kemlu.go.id/houston/',
-      contact: '+1 (713) 785 1691',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Houston.png?raw=true', alt: 'KJRI Houston' },
-    },
-    {
-      title: 'KJRI Los Angeles',
-      address: '3457 Wilshire Boulevard, Los Angeles, CA 90010',
-      website: 'https://kemlu.go.id/losangeles/',
-      contact: '+1 (213) 387 7041',
-      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-LA.png?raw=true', alt: 'KJRI Los Angeles' },
-    },
-  ]}
-/>
+    id="Embassies"
+    title="Contact the Indonesian Embassies"
+    subtitle="Explore our resources to connect with Indonesian embassies, ensuring support and guidance for your endeavors abroad."
+    columns={3}
+    items={[
+      {
+        title: 'Embassy of the Republic of Indonesia in USA',
+        address: '2020 Massachusetts Ave NW, Washington, DC 20036',
+        website: 'https://www.embassyofindonesia.org',
+        contact: '+1 (202) 775-5200',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Indo.png?raw=true',
+          alt: 'Embassy of Indonesia in the U.S.',
+        },
+      },
+      {
+        title: 'Embassy of the United States in Indonesia',
+        address: 'Jl. Medan Merdeka Selatan No. 3–5, Jakarta 10110',
+        website: 'https://id.usembassy.gov',
+        contact: '+62-21-5083-1000',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-USA.jpg?raw=true',
+          alt: 'U.S. Embassy in Indonesia',
+        },
+      },
+      {
+        title: 'KJRI San Francisco',
+        address: '1111 Columbus Avenue, San Francisco, CA 94133',
+        website: 'https://kemlu.go.id/sanfrancisco/id',
+        contact: '+1 (415) 875 0793',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-SF.jpg?raw=true',
+          alt: 'KJRI San Francisco',
+        },
+      },
+      {
+        title: 'KJRI New York',
+        address: '5 E 68th St, New York, NY 10065',
+        website: 'https://kjrinewyork.org/',
+        contact: '+1 (212) 879-0600',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-NY.png?raw=true',
+          alt: 'KJRI New York',
+        },
+      },
+      {
+        title: 'KJRI Chicago',
+        address: '211 N Carpenter St, Chicago, IL 60607',
+        website: 'https://kemlu.go.id/chicago',
+        contact: '+1 (312) 920 1880',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Chicago.png?raw=true',
+          alt: 'KJRI Chicago',
+        },
+      },
+      {
+        title: 'KJRI Houston',
+        address: '10900 Richmond Avenue, Houston, TX 77042',
+        website: 'https://kemlu.go.id/houston/',
+        contact: '+1 (713) 785 1691',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Houston.png?raw=true',
+          alt: 'KJRI Houston',
+        },
+      },
+      {
+        title: 'KJRI Los Angeles',
+        address: '3457 Wilshire Boulevard, Los Angeles, CA 90010',
+        website: 'https://kemlu.go.id/losangeles/',
+        contact: '+1 (213) 387 7041',
+        image: {
+          src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-LA.png?raw=true',
+          alt: 'KJRI Los Angeles',
+        },
+      },
+    ]}
+  />
 
   <!-- VISA PROCESS -->
   <Hero3
-  id="visa-process"
-  tagline="VISA"
-  title="VISA Process"
-  subtitle="The best place to obtain information is your school's international student office, as each school may have its own process for issuing the necessary support documents."
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Info for Student Visa',
-      href: 'https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html',
-      icon: 'tabler:square-rounded-arrow-right',
-    },
-  ]}
-  image={{
-    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Visa-Process.jpg",
-    alt: 'Visa Picture',
-  }}
-/>
+    id="visa-process"
+    tagline="VISA"
+    title="VISA Process"
+    subtitle="The best place to obtain information is your school's international student office, as each school may have its own process for issuing the necessary support documents."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Info for Student Visa',
+        href: 'https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+    ]}
+    image={{
+      src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Visa-Process.jpg',
+      alt: 'Visa Picture',
+    }}
+  />
 
-
-<!-- Academics -->
-<Acedemics
-  id="academics"
-  tagline="Academics"
-  title="How to Apply to US Universities?"
-  subtitle="Unlock your future—take the first step toward studying in the US."
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Homeland Security',
-      href: 'https://studyinthestates.dhs.gov/',
-      icon: 'tabler:square-rounded-arrow-right',
-    },
-    {
-      variant: 'primary',
-      text: 'US Grad School Admissions',
-      href: 'https://www.topuniversities.com/student-info/admissions-advice/us-grad-school-admissions-7-steps%C2%A0', //FIX THIS LINK ITS BROKEN
-      icon: 'tabler:square-rounded-arrow-right',
-    },
-  ]}
-  image={{
-    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Apply-Universities.png",
-    alt: 'Applying to US Universities',
-  }}
-/>
+  <!-- Academics -->
+  <Acedemics
+    id="Academics"
+    tagline="Academics"
+    title="How to Apply to US Universities?"
+    subtitle="Unlock your future—take the first step toward studying in the US."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Homeland Security',
+        href: 'https://studyinthestates.dhs.gov/',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      {
+        variant: 'primary',
+        text: 'US Grad School Admissions',
+        href: 'https://www.topuniversities.com/student-info/admissions-advice/us-grad-school-admissions-7-steps%C2%A0', //FIX THIS LINK ITS BROKEN
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+    ]}
+    image={{
+      src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Apply-Universities.png',
+      alt: 'Applying to US Universities',
+    }}
+  />
 
   <!-- Job Hunting -->
   <Hero3
-  id="job_hunting"
-  tagline="Jobs & Internships"
-  title="Job and Internship Opportunities"
-  subtitle="Unlock new opportunities and take the next step in your career journey."
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Aparatur Sipil Negara Recruitment',
-      href: 'https://sscasn.bkn.go.id/',
-      icon: 'tabler:square-rounded-arrow-right',
-    },
-  ]}
-  image={{
-    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Job-Internship.jpg",
-    alt: 'FAANG Interns',
-  }}
-/>
+    id="Job_Hunting"
+    tagline="Jobs & Internships"
+    title="Job and Internship Opportunities"
+    subtitle="Unlock new opportunities and take the next step in your career journey."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Aparatur Sipil Negara Recruitment',
+        href: 'https://sscasn.bkn.go.id/',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+    ]}
+    image={{
+      src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Job-Internship.jpg',
+      alt: 'FAANG Interns',
+    }}
+  />
 
   <!-- Research -->
   <ResearchSection
-  id="research"
-  title="Research"
-  subtitle="Explore major academic institutions, private research organizations, and collaboration opportunities for research in Indonesia."
-  sections={[
-    {
-      title: "Major Academic Institutions (Outside of Universities)",
-      content: [
-        { text: "National Labs - Government Research Labs generally offer various postdoctoral positions.", link: "https://www.energy.gov/science/doe-national-laboratories" }
-      ],
-      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Major-Acedemic-Institutions.jpg"
-    },
-    {
-      title: "Private Research Institutions",
-      content: [
-        { text: "The Brookings Institution", link: "https://www.brookings.edu/" },
-        { text: "Harvard Kennedy School Belfer Center", link: "https://www.belfercenter.org/" },
-        { text: "Broad Institute", link: "https://www.broadinstitute.org/" },
-        { text: "Genentech", link: "https://www.gene.com/" },
-        { text: "National Bureau of Economic Research", link: "https://www.nber.org/" },
-        { text: "OpenAI", link: "https://openai.com/" }
-      ],
-      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Private-Research-Institutions.png"
-    },
-    {
-      title: "Indonesian Research Communities & Think Tanks",
-      content: [
-        { text: "Indonesia Corruption Watch", link: "https://www.antikorupsi.org/" },
-        { text: "CSIS", link: "https://www.csis.or.id/" },
-        { text: "Economic Research Institute for ASEAN and East Asia", link: "https://www.eria.org/" },
-        { text: "Center for Indonesian Policy Studies", link: "https://www.cips-indonesia.org/" },
-        { text: "LIPI", link: "http://lipi.go.id/" },
-        { text: "The Habibie Center", link: "https://habibiecenter.or.id/" },
-        { text: "World Bank Indonesia", link: "https://www.worldbank.org/en/country/indonesia" },
-        { text: "JPAL Indonesia", link: "https://www.povertyactionlab.org/southeast-asia" },
-        { text: "Center for Sustainable Development Goals Studies - Universitas Padjadjaran", link: "https://csdgs.unpad.ac.id/" }
-      ],
-      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Indonesian-Research-Communities.jpg"
-    },
-    {
-      title: "Formal Academic Communities & Societies",
-      content: [
-        { text: "IEEE Indonesia Section", link: "https://ieee.id/" },
-        { text: "Indonesian Society of Human Genetics (InaSHG)", link: "https://www.inashg.org/" },
-        { text: "The Indonesian Society for Biochemistry and Molecular Biology", link: "https://isbmmb.org/" }
-      ],
-      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Formal-Academic.jpg"
-    },
-    {
-      title: "Research Collaboration",
-      content: [
-        { text: "To do research in Indonesia, foreign researchers are required to have collaborators in Indonesia who can sponsor their study.", link: "https://www.ristekbrin.go.id/" },
-        { text: "Foreign Research Permit is required for international researchers.", link: "https://frp.ristekbrin.go.id/" }
-      ],
-      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Research-Collaboration.jpg"
-    }
-  ]}
-/>
+    id="Research"
+    title="Research"
+    subtitle="Explore major academic institutions, private research organizations, and collaboration opportunities for research in Indonesia."
+    sections={[
+      {
+        title: 'Major Academic Institutions (Outside of Universities)',
+        content: [
+          {
+            text: 'National Labs - Government Research Labs generally offer various postdoctoral positions.',
+            link: 'https://www.energy.gov/science/doe-national-laboratories',
+          },
+        ],
+        image: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Major-Acedemic-Institutions.jpg',
+      },
+      {
+        title: 'Private Research Institutions',
+        content: [
+          { text: 'The Brookings Institution', link: 'https://www.brookings.edu/' },
+          { text: 'Harvard Kennedy School Belfer Center', link: 'https://www.belfercenter.org/' },
+          { text: 'Broad Institute', link: 'https://www.broadinstitute.org/' },
+          { text: 'Genentech', link: 'https://www.gene.com/' },
+          { text: 'National Bureau of Economic Research', link: 'https://www.nber.org/' },
+          { text: 'OpenAI', link: 'https://openai.com/' },
+        ],
+        image:
+          'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Private-Research-Institutions.png',
+      },
+      {
+        title: 'Indonesian Research Communities & Think Tanks',
+        content: [
+          { text: 'Indonesia Corruption Watch', link: 'https://www.antikorupsi.org/' },
+          { text: 'CSIS', link: 'https://www.csis.or.id/' },
+          { text: 'Economic Research Institute for ASEAN and East Asia', link: 'https://www.eria.org/' },
+          { text: 'Center for Indonesian Policy Studies', link: 'https://www.cips-indonesia.org/' },
+          { text: 'LIPI', link: 'http://lipi.go.id/' },
+          { text: 'The Habibie Center', link: 'https://habibiecenter.or.id/' },
+          { text: 'World Bank Indonesia', link: 'https://www.worldbank.org/en/country/indonesia' },
+          { text: 'JPAL Indonesia', link: 'https://www.povertyactionlab.org/southeast-asia' },
+          {
+            text: 'Center for Sustainable Development Goals Studies - Universitas Padjadjaran',
+            link: 'https://csdgs.unpad.ac.id/',
+          },
+        ],
+        image:
+          'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Indonesian-Research-Communities.jpg',
+      },
+      {
+        title: 'Formal Academic Communities & Societies',
+        content: [
+          { text: 'IEEE Indonesia Section', link: 'https://ieee.id/' },
+          { text: 'Indonesian Society of Human Genetics (InaSHG)', link: 'https://www.inashg.org/' },
+          { text: 'The Indonesian Society for Biochemistry and Molecular Biology', link: 'https://isbmmb.org/' },
+        ],
+        image: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Formal-Academic.jpg',
+      },
+      {
+        title: 'Research Collaboration',
+        content: [
+          {
+            text: 'To do research in Indonesia, foreign researchers are required to have collaborators in Indonesia who can sponsor their study.',
+            link: 'https://www.ristekbrin.go.id/',
+          },
+          {
+            text: 'Foreign Research Permit is required for international researchers.',
+            link: 'https://frp.ristekbrin.go.id/',
+          },
+        ],
+        image: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Research-Collaboration.jpg',
+      },
+    ]}
+  />
 
-<!-- Scholarships -->
-<Scholarships
-  id="scholarships"
-  title="Scholarship Opportunities"
-  subtitle="Find scholarships that support your studies and research aspirations."
-  columns={3}
-  items={[
-    {
-      title: "Lembaga Pengelola Dana Pendidikan (LPDP)",
-      description: "A prestigious Indonesian government-funded scholarship for postgraduate studies in top universities worldwide.",
-      link: "https://www.lpdp.kemenkeu.go.id/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/LPDP-Scholarship.jpg", alt: "LPDP Scholarship" }
-    },
-    {
-      title: "United States-Indonesia Society (USINDO)",
-      description: "Scholarships and educational programs fostering U.S.-Indonesia bilateral relations through academic exchanges.",
-      link: "https://usindo.org/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/USINDO-Scholarship.jpg", alt: "USINDO Scholarship" }
-    },
-    {
-      title: "American Indonesian Exchange Foundation (AMINEF) Grants",
-      description: "Funding opportunities for Indonesian students and scholars to pursue higher education in the United States.",
-      link: "https://www.aminef.or.id/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AMINEF-Scholarship.png", alt: "AMINEF Grants" }
-    },
-    {
-      title: "Fulbright Doctoral Degree Scholarship",
-      description: "A prestigious scholarship program supporting Indonesian students to pursue doctoral studies in the U.S.",
-      link: "https://www.aminef.or.id/grants-for-indonesians/fulbright-programs/fulbright-doctoral-degree-scholarship/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Fullbright-Scholarship.jpg", alt: "Fulbright Scholarship" }
-    },
-    {
-      title: "AIFIS Fellowship",
-      description: "A fellowship program supporting research collaborations between Indonesian and American scholars.",
-      link: "https://www.aifis.org/fellowship-programs",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AIFIS-Scholarship.png", alt: "AIFIS Fellowship" }
-    }
-  ]}
-/>
+  <!-- Scholarships -->
+  <Scholarships
+    id="Scholarships"
+    title="Scholarship Opportunities"
+    subtitle="Find scholarships that support your studies and research aspirations."
+    columns={3}
+    items={[
+      {
+        title: 'Lembaga Pengelola Dana Pendidikan (LPDP)',
+        description:
+          'A prestigious Indonesian government-funded scholarship for postgraduate studies in top universities worldwide.',
+        link: 'https://www.lpdp.kemenkeu.go.id/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/LPDP-Scholarship.jpg',
+          alt: 'LPDP Scholarship',
+        },
+      },
+      {
+        title: 'United States-Indonesia Society (USINDO)',
+        description:
+          'Scholarships and educational programs fostering U.S.-Indonesia bilateral relations through academic exchanges.',
+        link: 'https://usindo.org/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/USINDO-Scholarship.jpg',
+          alt: 'USINDO Scholarship',
+        },
+      },
+      {
+        title: 'American Indonesian Exchange Foundation (AMINEF) Grants',
+        description:
+          'Funding opportunities for Indonesian students and scholars to pursue higher education in the United States.',
+        link: 'https://www.aminef.or.id/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AMINEF-Scholarship.png',
+          alt: 'AMINEF Grants',
+        },
+      },
+      {
+        title: 'Fulbright Doctoral Degree Scholarship',
+        description:
+          'A prestigious scholarship program supporting Indonesian students to pursue doctoral studies in the U.S.',
+        link: 'https://www.aminef.or.id/grants-for-indonesians/fulbright-programs/fulbright-doctoral-degree-scholarship/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Fullbright-Scholarship.jpg',
+          alt: 'Fulbright Scholarship',
+        },
+      },
+      {
+        title: 'AIFIS Fellowship',
+        description:
+          'A fellowship program supporting research collaborations between Indonesian and American scholars.',
+        link: 'https://www.aifis.org/fellowship-programs',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AIFIS-Scholarship.png',
+          alt: 'AIFIS Fellowship',
+        },
+      },
+    ]}
+  />
 
-<Entrepreneurship
-  id="entrepreneurship"
-  title="Entrepreneurship Opportunities"
-  subtitle="Who you should talk to if you have ideas and want to start something."
-  columns={4}
-  items={[
-    {
-      title: "Intudo Ventures",
-      description: "A leading independent VC firm focusing on Indonesia’s early-stage and growth-stage startups.",
-      link: "https://www.intudovc.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Intudo-Ventures.png", alt: "Intudo Ventures" }
-    },
-    {
-      title: "Agaeti Ventures",
-      description: "A venture capital firm investing in high-growth startups across various sectors in Indonesia.",
-      link: "https://www.agaetiventures.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Agaeti-Ventures.jpg", alt: "Agaeti Ventures" }
-    },
-    {
-      title: "Alpha JWC Ventures",
-      description: "An Indonesia-based venture capital firm investing in tech startups across Southeast Asia.",
-      link: "https://www.alphajwc.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Alpha-JWC-Ventures.jpg", alt: "Alpha JWC Ventures" }
-    },
-    {
-      title: "GDP Ventures",
-      description: "A strategic investment firm focusing on digital communities, media, commerce, and solutions.",
-      link: "https://gdpventure.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/GDP-Ventures.jpg", alt: "GDP Ventures" }
-    },
-    {
-      title: "East Ventures",
-      description: "A pioneering sector-agnostic venture capital firm backing tech startups in Southeast Asia.",
-      link: "https://east.vc/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/East-Ventures.png", alt: "East Ventures" }
-    },
-    {
-      title: "Convergence Ventures",
-      description: "An early-stage venture capital firm investing in Indonesia’s digital economy.",
-      link: "https://www.convergencevc.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Convergence-Ventures.jpg", alt: "Convergence Ventures" }
-    },
-    {
-      title: "Kejora Capital",
-      description: "A venture capital firm accelerating startup growth in Indonesia and Southeast Asia.",
-      link: "https://kejora.vc/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Kejora-Ventures.jpg", alt: "Kejora Capital" }
-    },
-    {
-      title: "CyberAgent Capital",
-      description: "A Japan-based venture capital firm actively investing in Southeast Asian startups.",
-      link: "https://www.cyberagentcapital.com/en/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Cyber-Agent-Ventures.jpg", alt: "CyberAgent Capital" }
-    },
-    {
-      title: "Ideosource",
-      description: "A VC firm supporting digital innovation and technological transformation in Indonesia.",
-      link: "https://ideosource.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Ideosource-Ventures.png", alt: "Ideosource" }
-    },
-    {
-      title: "Venturra Capital",
-      description: "A Southeast Asian-focused venture capital firm investing in tech-driven startups.",
-      link: "https://www.venturra.com/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Venturra.png", alt: "Venturra Capital" }
-    },
-    {
-      title: "Dana Ilmu Pengetahuan Indonesia (DIPI)",
-      description: "An Indonesian science and innovation funding agency supporting research and development.",
-      link: "https://dipi.id/",
-      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/DIPI-Ventures.jpg", alt: "DIPI" }
-    }
-  ]}
-/>
-
+  <Entrepreneurship
+    id="Entrepreneurship"
+    title="Entrepreneurship Opportunities"
+    subtitle="Who you should talk to if you have ideas and want to start something."
+    columns={4}
+    items={[
+      {
+        title: 'Intudo Ventures',
+        description: 'A leading independent VC firm focusing on Indonesia’s early-stage and growth-stage startups.',
+        link: 'https://www.intudovc.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Intudo-Ventures.png',
+          alt: 'Intudo Ventures',
+        },
+      },
+      {
+        title: 'Agaeti Ventures',
+        description: 'A venture capital firm investing in high-growth startups across various sectors in Indonesia.',
+        link: 'https://www.agaetiventures.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Agaeti-Ventures.jpg',
+          alt: 'Agaeti Ventures',
+        },
+      },
+      {
+        title: 'Alpha JWC Ventures',
+        description: 'An Indonesia-based venture capital firm investing in tech startups across Southeast Asia.',
+        link: 'https://www.alphajwc.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Alpha-JWC-Ventures.jpg',
+          alt: 'Alpha JWC Ventures',
+        },
+      },
+      {
+        title: 'GDP Ventures',
+        description: 'A strategic investment firm focusing on digital communities, media, commerce, and solutions.',
+        link: 'https://gdpventure.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/GDP-Ventures.jpg',
+          alt: 'GDP Ventures',
+        },
+      },
+      {
+        title: 'East Ventures',
+        description: 'A pioneering sector-agnostic venture capital firm backing tech startups in Southeast Asia.',
+        link: 'https://east.vc/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/East-Ventures.png',
+          alt: 'East Ventures',
+        },
+      },
+      {
+        title: 'Convergence Ventures',
+        description: 'An early-stage venture capital firm investing in Indonesia’s digital economy.',
+        link: 'https://www.convergencevc.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Convergence-Ventures.jpg',
+          alt: 'Convergence Ventures',
+        },
+      },
+      {
+        title: 'Kejora Capital',
+        description: 'A venture capital firm accelerating startup growth in Indonesia and Southeast Asia.',
+        link: 'https://kejora.vc/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Kejora-Ventures.jpg',
+          alt: 'Kejora Capital',
+        },
+      },
+      {
+        title: 'CyberAgent Capital',
+        description: 'A Japan-based venture capital firm actively investing in Southeast Asian startups.',
+        link: 'https://www.cyberagentcapital.com/en/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Cyber-Agent-Ventures.jpg',
+          alt: 'CyberAgent Capital',
+        },
+      },
+      {
+        title: 'Ideosource',
+        description: 'A VC firm supporting digital innovation and technological transformation in Indonesia.',
+        link: 'https://ideosource.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Ideosource-Ventures.png',
+          alt: 'Ideosource',
+        },
+      },
+      {
+        title: 'Venturra Capital',
+        description: 'A Southeast Asian-focused venture capital firm investing in tech-driven startups.',
+        link: 'https://www.venturra.com/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Venturra.png',
+          alt: 'Venturra Capital',
+        },
+      },
+      {
+        title: 'Dana Ilmu Pengetahuan Indonesia (DIPI)',
+        description: 'An Indonesian science and innovation funding agency supporting research and development.',
+        link: 'https://dipi.id/',
+        image: {
+          src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/DIPI-Ventures.jpg',
+          alt: 'DIPI',
+        },
+      },
+    ]}
+  />
 </Layout>
-
-

@@ -2,17 +2,9 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Brands from '~/components/widgets/Brands.astro';
-
-import { YouTube } from 'astro-embed';
-import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Our Team',
@@ -27,61 +19,46 @@ const metadata = {
   ></Hero>
 
   <!-- Features2 Widget ************** -->
-  <div style="margin-top: -200px;">
+  <div class="lg:mt-[-200px] md:mt-[-175px] mt-[-125px]">
     <Features2
       title="Executive Board"
-      subtitle='Department contact: executives@permiasnasional.com'
     >
     </Features2>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrtmULZzlE3msQGF?viewControls=on" 
-        width="75%" height="600" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto;"
+    <iframe class="airtable-embed lg:mt-[-100px] mt-[-50px]" src="https://airtable.com/embed/appRyqXmkixlqmaIN/shrMkFqMSAFJyHPto?" 
+        width="75%" height="500" style="background: transparent; margin-left: auto; margin-right: auto;"
     ></iframe>
   </div>
 
   <Features
     title="Academics"
-    subtitle='Department contact: academicresearch@permiasnasional.com'
   >
   </Features>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrsrVg0Xlii1kmwe?viewControls=on" 
-    width="75%" height="1000" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto;"
+  <iframe class="airtable-embed  lg:mt-[-100px] mt-[-50px]" src="https://airtable.com/embed/appRyqXmkixlqmaIN/shrze3UQbcN1frDZR?"
+    width="75%" height="950" style="background: transparent; margin-left: auto; margin-right: auto;"
   ></iframe>
 
   <Features2
-    title="Oreo"
-    subtitle='Department contact: oreo@permiasnasional.com'
+    title="Organizational Development"
   >
   </Features2>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrVJpHeiqVSy4B4i?viewControls=on" 
-    width="75%" height="1000" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto;"
+  <iframe class="airtable-embed lg:mt-[-100px] mt-[-50px]" src="https://airtable.com/embed/appRyqXmkixlqmaIN/shr6PUsHnIhAEGTmL?"
+    width="75%" height="950" style="background: transparent; margin-left: auto; margin-right: auto;"
   ></iframe>
 
   <Features
-    title="Marketing"
-    subtitle='Department contact: marketing@permiasnasional.com'
+    title="Professional Development"
   >
   </Features>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrx02JglikHbZAV4?viewControls=on"
-    width="75%" height="1000" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto;"
+  <iframe class="airtable-embed lg:mt-[-100px] mt-[-50px]" src="https://airtable.com/embed/appRyqXmkixlqmaIN/shrzHWoFQ5A0DuVhl?"
+    width="75%" height="950" style="background: transparent; margin-left: auto; margin-right: auto;"
   ></iframe>
   
   <Features2
-    title="Digital Communication"
-    subtitle='Department contact: digicom@permiasnasional.com'
+    title="Publication and Promotions"
   >
   </Features2>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrIkdGIC7dvKCQdD?viewControls=on" 
-    width="75%" height="600" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto;"
+  <iframe class="airtable-embed lg:mt-[-100px] mt-[-50px]" src="https://airtable.com/embed/appRyqXmkixlqmaIN/shrpPFrPo3I9hKhmJ?" 
+    width="75%" height="950" style="background: transparent; margin-left: auto; margin-right: auto; margin-bottom: 100px"
   ></iframe>
-
-  <Features
-    title="Fundraising"
-    subtitle='Department contact: fundraising@permiasnasional.com'
-  >
-  </Features>
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appDrKb6Ubp1LmRaU/shrwZU520TT5B5JjK?viewControls=on"
-    width="75%" height="600" style="background: transparent; margin-left: auto; margin-top: -100px; margin-right: auto; margin-bottom: 100px;"
-  ></iframe>
-  
 
 </Layout>

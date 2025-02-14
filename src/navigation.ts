@@ -92,15 +92,16 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
+        { text: 'Join Our Mailing List', href: '#' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
-        { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],
     },
     {
       links: [
-        { text: 'About Us', href: '#' },
-        { text: 'Contact', href: '/contact' },
+        { text: 'Sejarah Kami', href: '/homes/sejarahKami' },
+        { text: 'Our Team', href: '/about/team' },
+        { text: 'Chapters', href: '/about/chapters' },
+        { text: 'Contact Us', href: '/contact' },
         // { text: 'Donate', href: '/donate' },
       ],
     },
