@@ -32,31 +32,31 @@ export const headerData = {
       links: [
         {
           text: 'Embassies',
-          href: getPermalink('/resources'),
+          href: getPermalink('/resources#embassies'),
         },
         {
           text: 'Visa',
-          href: '#visa-process',
+          href: getPermalink('/resources#visa-process'),
         },
         {
           text: 'Academics',
-          href: '#Academics',
+          href: getPermalink('/resources#academics'),
         },
         {
           text: 'Jobs',
-          href: '#Job_Hunting',
+          href: getPermalink('/resources#job_hunting'),
         },
         {
           text: 'Research',
-          href: '#Research',
+          href: getPermalink('/resources#research'),
         },
         {
           text: 'Scholarships',
-          href: '#Scholarships',
+          href: getPermalink('/resources#scholarships'),
         },
         {
           text: 'Entrepreneurship',
-          href: '#Entrepreneurship',
+          href: getPermalink('/resources#entrepreneurship'),
         }
       ],
     },
