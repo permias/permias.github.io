@@ -3,6 +3,10 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Home',
+      href: getPermalink('/'), 
+    },
+    {
       text: 'About',
       links: [
         {
@@ -25,7 +29,36 @@ export const headerData = {
     },
     {
       text: 'Resources',
-      href: getPermalink('/landing/Essentials')
+      links: [
+        {
+          text: 'Embassies',
+          href: getPermalink('/resources'),
+        },
+        {
+          text: 'Visa',
+          href: '#visa-process',
+        },
+        {
+          text: 'Academics',
+          href: '#Academics',
+        },
+        {
+          text: 'Jobs',
+          href: '#Job_Hunting',
+        },
+        {
+          text: 'Research',
+          href: '#Research',
+        },
+        {
+          text: 'Scholarships',
+          href: '#Scholarships',
+        },
+        {
+          text: 'Entrepreneurship',
+          href: '#Entrepreneurship',
+        }
+      ],
     },
     // {
     //   text: 'Blog',
