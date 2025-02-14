@@ -1,21 +1,55 @@
 ---
-import Layout from '~/layouts/LandingLayout.astro';
+// import Layout from '~/layouts/LandingLayout.astro';
+import Layout from '~/layouts/PageLayout.astro';
 import EmbassiesFeature from '~/components/widgets/EmbassiesFeature.astro';
 import Hero3 from '~/components/widgets/Hero3-Visa&Jobs.astro';
 import Acedemics from '~/components/widgets/Hero4-Academics.astro';
 import ResearchSection from '~/components/widgets/ResearchSection.astro';
-import Header from '~/components/widgets/Header.astro';
+// import Header from '~/components/widgets/Header.astro';
 import Scholarships from '~/components/widgets/Scholarships.astro';
 import Entrepreneurship from '~/components/widgets/Entrepreneurship.astro'; 
+// import { Image } from 'astro:assets';
+
+// Import Images
+// import EmbassyChicago from '~/assets/images/Resources/Embassy-Chicago.png';
+// import EmbassyHouston from '~/assets/images/Resources/Embassy-Houston.png';
+// import EmbassyIndo from '~/assets/images/Resources/Embassy-Indo.png';
+// import EmbassyLA from '~/assets/images/Resources/Embassy-LA.png';
+// import EmbassyNY from '~/assets/images/Resources/Embassy-NY.png';
+// import EmbassySF from '~/assets/images/Resources/Embassy-SF.jpg';
+// import EmbassyUSA from '~/assets/images/Resources/Embassy-USA.jpg';
+// import ApplyUniversities from '~/assets/images/Resources/Apply-Universities.png';
+// import VisaProcess from '~/assets/images/Resources/Visa-Process.jpg'; 
+// import JobInternship from '~/assets/images/Resources/Job-Internship.jpg';
+// import AgaetiVentures from '~/assets/images/Resources/Agaeti-Ventures.jpg';
+// import AIFISScholarship from '~/assets/images/Resources/AIFIS-Scholarship.png';
+// import AIPIVentures from '~/assets/images/Resources/AIPI-Ventures.png';
+// import AlphaJWCVentures from '~/assets/images/Resources/Alpha-JWC-Ventures.jpg';
+// import AMINEFScholarship from '~/assets/images/Resources/AMINEF-Scholarship.png';
+// import ConvergenceVentures from '~/assets/images/Resources/Convergence-Ventures.jpg';
+// import CyberAgentVentures from '~/assets/images/Resources/Cyber-Agent-Ventures.jpg';
+// import EastVentures from '~/assets/images/Resources/East-Ventures.png';
+// import FormalAcademic from '~/assets/images/Resources/Formal-Academic.jpg';
+// import FullbrightScholarship from '~/assets/images/Resources/Fullbright-Scholarship.jpg';
+// import GDPVentures from '~/assets/images/Resources/GDP-Ventures.jpg';
+// import IdeosourceVentures from '~/assets/images/Resources/Ideosource-Ventures.png';
+// import IndonesianResearchCommunities from '~/assets/images/Resources/Indonesian-Research-Communities.jpg';
+// import IntudoVentures from '~/assets/images/Resources/Intudo-Ventures.png';
+// import KejoraVentures from '~/assets/images/Resources/Kejora-Ventures.jpg';
+// import LPDPScholarship from '~/assets/images/Resources/LPDP-Scholarship.jpg';
+// import MajorAcademicInstitutions from '~/assets/images/Resources/Major-Academic-Institutions.jpg';
+// import PrivateResearchInstitutions from '~/assets/images/Resources/Private-Research-Institutions.png';
+// import ResearchCollaboration from '~/assets/images/Resources/Research-Collaboration.jpg';
+// import USINDOScholarship from '~/assets/images/Resources/USINDO-Scholarship.jpg';
+// import Venturra from '~/assets/images/Resources/Venturra.png';
 
 const metadata = {
-  title: 'Sales Landing Page Demo',
+  title: 'Resources',
 };
 ---
 
-
 <Layout metadata={metadata}>
-    <Fragment slot="announcement"></Fragment>
+    <!-- <Fragment slot="announcement"></Fragment>
     <Fragment slot="header">
       <Header
         links={[
@@ -36,7 +70,7 @@ const metadata = {
         isSticky
         showToggleTheme
       />
-    </Fragment>
+    </Fragment> -->
 
   <!-- Embassies -->
   <EmbassiesFeature
@@ -50,49 +84,49 @@ const metadata = {
       address: '2020 Massachusetts Ave NW, Washington, DC 20036',
       website: 'https://www.embassyofindonesia.org',
       contact: '+1 (202) 775-5200',
-      image: { src: 'https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/4.jpg', alt: 'Embassy of Indonesia in the U.S.' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Indo.png?raw=true', alt: 'Embassy of Indonesia in the U.S.' },
     },
     {
       title: 'Embassy of the United States in Indonesia',
       address: 'Jl. Medan Merdeka Selatan No. 3–5, Jakarta 10110',
       website: 'https://id.usembassy.gov',
       contact: '+62-21-5083-1000',
-      image: { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/1920px-Mount_Rushmore_detail_view_%28100MP%29.jpg', alt: 'U.S. Embassy in Indonesia' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-USA.jpg?raw=true', alt: 'U.S. Embassy in Indonesia' },
     },
     {
       title: 'KJRI San Francisco',
       address: '1111 Columbus Avenue, San Francisco, CA 94133',
       website: 'https://kemlu.go.id/sanfrancisco/id',
       contact: '+1 (415) 875 0793',
-      image: { src: 'https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Golden%20gate.jpg', alt: 'KJRI San Francisco' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-SF.jpg?raw=true', alt: 'KJRI San Francisco' },
     },
     {
       title: 'KJRI New York',
       address: '5 E 68th St, New York, NY 10065',
       website: 'https://kjrinewyork.org/',
       contact: '+1 (212) 879-0600',
-      image: { src: 'https://cdn-imgix.headout.com/tour/30357/TOUR-IMAGE/6cdcf542-452d-4897-beed-76cf68f154e4-1act-de005e04-05d9-4715-96b0-6a089d5c3460.jpg?auto=format&w=1222.3999999999999&h=687.6&q=90&fit=crop&ar=16%3A9&crop=faces', alt: 'KJRI New York' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-NY.png?raw=true', alt: 'KJRI New York' },
     },
     {
       title: 'KJRI Chicago',
       address: '211 N Carpenter St, Chicago, IL 60607',
       website: 'https://kemlu.go.id/chicago',
       contact: '+1 (312) 920 1880',
-      image: { src: 'https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/chicago_000_4550_up.jpg', alt: 'KJRI Chicago' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Chicago.png?raw=true', alt: 'KJRI Chicago' },
     },
     {
       title: 'KJRI Houston',
       address: '10900 Richmond Avenue, Houston, TX 77042',
       website: 'https://kemlu.go.id/houston/',
       contact: '+1 (713) 785 1691',
-      image: { src: 'https://blog.cirquedusoleil.com/-/media/blog/fb_open_graph/brainlabs-articles/houston/bl-houston-architecture/houston_skyline_texas_tower_facebook_cover.jpg?db=web&vs=1&hash=10E2936B538E806AB522E662EE59BF00', alt: 'KJRI Houston' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-Houston.png?raw=true', alt: 'KJRI Houston' },
     },
     {
       title: 'KJRI Los Angeles',
       address: '3457 Wilshire Boulevard, Los Angeles, CA 90010',
       website: 'https://kemlu.go.id/losangeles/',
       contact: '+1 (213) 387 7041',
-      image: { src: 'https://offloadmedia.feverup.com/secretlosangeles.com/wp-content/uploads/2024/02/26040501/los-angeles-attractions.jpg', alt: 'KJRI Los Angeles' },
+      image: { src: 'https://github.com/BawbleXD/Images-Pernas/blob/main/Embassy-LA.png?raw=true', alt: 'KJRI Los Angeles' },
     },
   ]}
 />
@@ -112,7 +146,7 @@ const metadata = {
     },
   ]}
   image={{
-    src: 'https://media.istockphoto.com/id/480471413/photo/us-visa.jpg?s=612x612&w=0&k=20&c=4rhDBU45a2ODoN1Eil6543p6qbEPnpgtAhKlbfxRhVo=',
+    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Visa-Process.jpg",
     alt: 'Visa Picture',
   }}
 />
@@ -139,7 +173,7 @@ const metadata = {
     },
   ]}
   image={{
-    src: 'https://cache.careers360.mobi/media/article_images/2021/12/31/top-universities-2022.webp',
+    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Apply-Universities.png",
     alt: 'Applying to US Universities',
   }}
 />
@@ -159,7 +193,7 @@ const metadata = {
     },
   ]}
   image={{
-    src: 'https://media.licdn.com/dms/image/v2/D4E12AQF7UYQqT8iB6Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1690528822460?e=2147483647&v=beta&t=HZnHMoh7deg75xmKYezxZNvfiMkI6TdAEH2Xjp5przE',
+    src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Job-Internship.jpg",
     alt: 'FAANG Interns',
   }}
 />
@@ -175,7 +209,7 @@ const metadata = {
       content: [
         { text: "National Labs - Government Research Labs generally offer various postdoctoral positions.", link: "https://www.energy.gov/science/doe-national-laboratories" }
       ],
-      image: "https://www.cannondesign.com/img/3b39b7e9-ff17-4ea8-9fa6-1152f3c3705e/005063_00_N82_cdwebsite.jpg?fm=jpg&q=80&fit=max&crop=3000%2C2000%2C0%2C0&w=1000"
+      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/main/Major-Acedemic-Institutions.jpg"
     },
     {
       title: "Private Research Institutions",
@@ -187,7 +221,7 @@ const metadata = {
         { text: "National Bureau of Economic Research", link: "https://www.nber.org/" },
         { text: "OpenAI", link: "https://openai.com/" }
       ],
-      image: "https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/mf-22120-wikimedia-randcorporationsantamonica-10ce8111d91e91af391ee3b20e5935b6.jpg"
+      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Private-Research-Institutions.png"
     },
     {
       title: "Indonesian Research Communities & Think Tanks",
@@ -202,7 +236,7 @@ const metadata = {
         { text: "JPAL Indonesia", link: "https://www.povertyactionlab.org/southeast-asia" },
         { text: "Center for Sustainable Development Goals Studies - Universitas Padjadjaran", link: "https://csdgs.unpad.ac.id/" }
       ],
-      image: "https://csis-website-prod.s3.amazonaws.com/s3fs-public/program/160209_CSIS_headquarters_main_image_0.jpg"
+      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Indonesian-Research-Communities.jpg"
     },
     {
       title: "Formal Academic Communities & Societies",
@@ -211,7 +245,7 @@ const metadata = {
         { text: "Indonesian Society of Human Genetics (InaSHG)", link: "https://www.inashg.org/" },
         { text: "The Indonesian Society for Biochemistry and Molecular Biology", link: "https://isbmmb.org/" }
       ],
-      image: "https://biologi.ugm.ac.id/wp-content/uploads/sites/11/2024/11/Ardiza-2-700x500.jpg"
+      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Formal-Academic.jpg"
     },
     {
       title: "Research Collaboration",
@@ -219,7 +253,7 @@ const metadata = {
         { text: "To do research in Indonesia, foreign researchers are required to have collaborators in Indonesia who can sponsor their study.", link: "https://www.ristekbrin.go.id/" },
         { text: "Foreign Research Permit is required for international researchers.", link: "https://frp.ristekbrin.go.id/" }
       ],
-      image: "https://unbound.upcea.edu/wp-content/uploads/2016/10/partnership-across-table-1024x931.jpg"
+      image: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Research-Collaboration.jpg"
     }
   ]}
 />
@@ -235,31 +269,31 @@ const metadata = {
       title: "Lembaga Pengelola Dana Pendidikan (LPDP)",
       description: "A prestigious Indonesian government-funded scholarship for postgraduate studies in top universities worldwide.",
       link: "https://www.lpdp.kemenkeu.go.id/",
-      image: { src: "https://www.pajak.com/storage/2024/12/e493ee5950c0279e74f30f812d2a1c0b-1.jpg", alt: "LPDP Scholarship" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/LPDP-Scholarship.jpg", alt: "LPDP Scholarship" }
     },
     {
       title: "United States-Indonesia Society (USINDO)",
       description: "Scholarships and educational programs fostering U.S.-Indonesia bilateral relations through academic exchanges.",
       link: "https://usindo.org/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C511BAQFKM-qxakMS9w/company-background_10000/company-background_10000/0/1584486188694/us_indonesia_society_cover?e=2147483647&v=beta&t=7crUlTX0j5EpNS9vfT2EtLmMwrPyLZdJwPcIWDLK1js", alt: "USINDO Scholarship" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/USINDO-Scholarship.jpg", alt: "USINDO Scholarship" }
     },
     {
       title: "American Indonesian Exchange Foundation (AMINEF) Grants",
       description: "Funding opportunities for Indonesian students and scholars to pursue higher education in the United States.",
       link: "https://www.aminef.or.id/",
-      image: { src: "https://cdn-web.ruangguru.com/landing-pages/assets/hs/Aminef.webp", alt: "AMINEF Grants" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AMINEF-Scholarship.png", alt: "AMINEF Grants" }
     },
     {
       title: "Fulbright Doctoral Degree Scholarship",
       description: "A prestigious scholarship program supporting Indonesian students to pursue doctoral studies in the U.S.",
       link: "https://www.aminef.or.id/grants-for-indonesians/fulbright-programs/fulbright-doctoral-degree-scholarship/",
-      image: { src: "https://pl.usembassy.gov/wp-content/uploads/sites/23/fulbright_logo_small-1.jpg", alt: "Fulbright Scholarship" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Fullbright-Scholarship.jpg", alt: "Fulbright Scholarship" }
     },
     {
       title: "AIFIS Fellowship",
       description: "A fellowship program supporting research collaborations between Indonesian and American scholars.",
       link: "https://www.aifis.org/fellowship-programs",
-      image: { src: "https://static1.squarespace.com/static/59762c21c534a5ea5de4e64b/t/644ff38ffce9230a1dd081f4/1738092190226/", alt: "AIFIS Fellowship" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/AIFIS-Scholarship.png", alt: "AIFIS Fellowship" }
     }
   ]}
 />
@@ -274,67 +308,67 @@ const metadata = {
       title: "Intudo Ventures",
       description: "A leading independent VC firm focusing on Indonesia’s early-stage and growth-stage startups.",
       link: "https://www.intudovc.com/",
-      image: { src: "https://image.pitchbook.com/uRZuOiHB78blufrH7cFnPDa0zfY1678437155144_200x200", alt: "Intudo Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Intudo-Ventures.png", alt: "Intudo Ventures" }
     },
     {
       title: "Agaeti Ventures",
       description: "A venture capital firm investing in high-growth startups across various sectors in Indonesia.",
       link: "https://www.agaetiventures.com/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C560BAQFgGSv12585XA/company-logo_200_200/company-logo_200_200/0/1631399532993/agaeti_venture_capital_logo?e=2147483647&v=beta&t=inMMGzw43H2aq2zigGJKw1hunl9tLSVf_2rCZhFIIjc", alt: "Agaeti Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Agaeti-Ventures.jpg", alt: "Agaeti Ventures" }
     },
     {
       title: "Alpha JWC Ventures",
       description: "An Indonesia-based venture capital firm investing in tech startups across Southeast Asia.",
       link: "https://www.alphajwc.com/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C560BAQEBtURJt6IMog/company-logo_200_200/company-logo_200_200/0/1635843164799?e=2147483647&v=beta&t=4DOWkhdREowMqgCBN7JdEOuBsifzm4qXCFBUSNxQ5T0", alt: "Alpha JWC Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Alpha-JWC-Ventures.jpg", alt: "Alpha JWC Ventures" }
     },
     {
       title: "GDP Ventures",
       description: "A strategic investment firm focusing on digital communities, media, commerce, and solutions.",
       link: "https://gdpventure.com/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C560BAQF2VrU4pe1R6A/company-logo_200_200/company-logo_200_200/0/1631349625899?e=2147483647&v=beta&t=jf27gDlkap1AOI_k8Ja5DL6U_mlwDe_EipNrgJi4FNU", alt: "GDP Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/GDP-Ventures.jpg", alt: "GDP Ventures" }
     },
     {
       title: "East Ventures",
       description: "A pioneering sector-agnostic venture capital firm backing tech startups in Southeast Asia.",
       link: "https://east.vc/",
-      image: { src: "https://east.vc/wp-content/uploads/2022/06/East-Ventures-Square-Logo.png", alt: "East Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/East-Ventures.png", alt: "East Ventures" }
     },
     {
       title: "Convergence Ventures",
       description: "An early-stage venture capital firm investing in Indonesia’s digital economy.",
       link: "https://www.convergencevc.com/",
-      image: { src: "https://algorit.ma/wp-content/uploads/2017/09/convergence-ventures.png", alt: "Convergence Ventures" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Convergence-Ventures.jpg", alt: "Convergence Ventures" }
     },
     {
       title: "Kejora Capital",
       description: "A venture capital firm accelerating startup growth in Indonesia and Southeast Asia.",
       link: "https://kejora.vc/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C510BAQGqLePhZI60ow/company-logo_200_200/company-logo_200_200/0/1631387115436?e=2147483647&v=beta&t=kgY2xjQYz31B8tiNQQ1NeYrc8kj3RYeaepgWdcy0LZE", alt: "Kejora Capital" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Kejora-Ventures.jpg", alt: "Kejora Capital" }
     },
     {
       title: "CyberAgent Capital",
       description: "A Japan-based venture capital firm actively investing in Southeast Asian startups.",
       link: "https://www.cyberagentcapital.com/en/",
-      image: { src: "https://media.licdn.com/dms/image/v2/C560BAQEUy9gCp1sfNQ/company-logo_200_200/company-logo_200_200/0/1630640396965?e=2147483647&v=beta&t=qrLwRDWzY90yFy2Rcs-HanLDZ9ey0aoiQybiD0U4zdQ", alt: "CyberAgent Capital" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Cyber-Agent-Ventures.jpg", alt: "CyberAgent Capital" }
     },
     {
       title: "Ideosource",
       description: "A VC firm supporting digital innovation and technological transformation in Indonesia.",
       link: "https://ideosource.com/",
-      image: { src: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397179577/0ff11a027aeaaff3582448bfac0a8998.png", alt: "Ideosource" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Ideosource-Ventures.png", alt: "Ideosource" }
     },
     {
       title: "Venturra Capital",
       description: "A Southeast Asian-focused venture capital firm investing in tech-driven startups.",
       link: "https://www.venturra.com/",
-      image: { src: "https://cdn.techinasia.com/data/images/wnRHcaV8LbjnJ3jTUk1sCU1773Wsgj2mHuWLnUX1.png", alt: "Venturra Capital" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/Venturra.png", alt: "Venturra Capital" }
     },
     {
       title: "Dana Ilmu Pengetahuan Indonesia (DIPI)",
       description: "An Indonesian science and innovation funding agency supporting research and development.",
       link: "https://dipi.id/",
-      image: { src: "https://dipi.id/wp-content/uploads/2023/08/aipi_sml-1.png", alt: "DIPI" }
+      image: { src: "https://raw.githubusercontent.com/BawbleXD/Images-Pernas/refs/heads/main/DIPI-Ventures.jpg", alt: "DIPI" }
     }
   ]}
 />
