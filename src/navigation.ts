@@ -11,7 +11,7 @@ export const headerData = {
       links: [
         {
           text: 'Sejarah Kami',
-          href: getPermalink('/homes/sejarahKami'),
+          href: getPermalink('/sejarah'),
         },
         {
           text: 'Our Team',
@@ -32,31 +32,31 @@ export const headerData = {
       links: [
         {
           text: 'Embassies',
-          href: getPermalink('/resources#embassies'),
+          href: getPermalink('/resources/#embassies'),
         },
         {
           text: 'Visa',
-          href: getPermalink('/resources#visaprocess'),
+          href: getPermalink('/resources/#visaprocess'),
         },
         {
           text: 'Academics',
-          href: getPermalink('/resources#academics'),
+          href: getPermalink('/resources/#academics'),
         },
         {
           text: 'Jobs',
-          href: getPermalink('/resources#jobhunting'),
+          href: getPermalink('/resources/#jobhunting'),
         },
         {
           text: 'Research',
-          href: getPermalink('/resources#research'),
+          href: getPermalink('/resources/#research'),
         },
         {
           text: 'Scholarships',
-          href: getPermalink('/resources#scholarships'),
+          href: getPermalink('/resources/#scholarships'),
         },
         {
           text: 'Entrepreneurship',
-          href: getPermalink('/resources#entrepreneurship'),
+          href: getPermalink('/resources/#entrepreneurship'),
         }
       ],
     },
