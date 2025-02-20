@@ -3,11 +3,15 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Home',
+      href: getPermalink('/'), 
+    },
+    {
       text: 'About',
       links: [
         {
           text: 'Sejarah Kami',
-          href: getPermalink('/homes/sejarahKami'),
+          href: getPermalink('/sejarah'),
         },
         {
           text: 'Our Team',
@@ -25,7 +29,36 @@ export const headerData = {
     },
     {
       text: 'Resources',
-      href: getPermalink('/landing/Essentials')
+      links: [
+        {
+          text: 'Embassies',
+          href: getPermalink('/resources/#embassies'),
+        },
+        {
+          text: 'Visa',
+          href: getPermalink('/resources/#visaprocess'),
+        },
+        {
+          text: 'Academics',
+          href: getPermalink('/resources/#academics'),
+        },
+        {
+          text: 'Jobs',
+          href: getPermalink('/resources/#jobhunting'),
+        },
+        {
+          text: 'Research',
+          href: getPermalink('/resources/#research'),
+        },
+        {
+          text: 'Scholarships',
+          href: getPermalink('/resources/#scholarships'),
+        },
+        {
+          text: 'Entrepreneurship',
+          href: getPermalink('/resources/#entrepreneurship'),
+        }
+      ],
     },
     // {
     //   text: 'Blog',
@@ -59,7 +92,7 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'Join Our Mailing List', href: '#' },
+        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
       ],
     },

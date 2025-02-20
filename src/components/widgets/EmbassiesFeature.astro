@@ -1,13 +1,13 @@
 ---
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
-import type { Item2, Features2 as Props } from '~/types';  // ✅ Use Features2
+import type { Item2, Features2 as Props } from '~/types'; // ✅ Use Features2
 
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
-  items = [] as Item2[],  // ✅ Explicitly define items as Item2[]
+  items = [] as Item2[], // ✅ Explicitly define items as Item2[]
   columns = 3,
 
   id,
@@ -21,48 +21,53 @@ const {
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
   <div class={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${columns} gap-6`}>
-    {items.map((item) => (
-      <div class="border rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-900">
-        {item.image && (
-          <img 
-            src={typeof item.image === 'string' ? item.image : item.image.src} 
-            alt={typeof item.image === 'string' ? item.title ?? 'Embassy Image' : item.image.alt ?? 'Embassy Image'} 
-            class="w-full h-48 object-cover"
-            loading="lazy"
-          />
-        )}
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{item.title}</h3>
-          
-          {item.address && (
-            <p class="text-gray-600 dark:text-gray-400 mt-2">
-              <strong>Address:</strong> 
-              <a 
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.address)}`} 
-                class="text-blue-500 hover:underline" 
-                target="_blank"
-              >
-                {item.address}
-              </a>
-            </p>
+    {
+      items.map((item) => (
+        <div class="border rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-900">
+          {item.image && (
+            <img
+              src={typeof item.image === 'string' ? item.image : item.image.src}
+              alt={
+                typeof item.image === 'string' ? (item.title ?? 'Embassy Image') : (item.image.alt ?? 'Embassy Image')
+              }
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
           )}
-          {item.website && (
-            <p class="text-gray-600 dark:text-gray-400"><strong>Website:</strong> 
-              <a href={item.website} class="text-blue-500 hover:underline" target="_blank">
-                {item.website}
-              </a>
-            </p>
-          )}
-          {item.contact && (
-            <p class="text-gray-600 dark:text-gray-400">
-              <strong>Contact:</strong> 
-              <a href={`tel:${item.contact.replace(/\s+/g, '')}`} class="text-blue-500 hover:underline">
-                {item.contact}
-              </a>
-            </p>
-          )}
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{item.title}</h3>
+
+            {item.address && (
+              <p class="text-gray-600 dark:text-gray-400 mt-2">
+                <strong>Address:</strong>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.address)}`}
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                >
+                  {item.address}
+                </a>
+              </p>
+            )}
+            {item.website && (
+              <p class="text-gray-600 dark:text-gray-400">
+                <strong>Website:</strong>
+                <a href={item.website} class="text-blue-500 hover:underline" target="_blank">
+                  {item.website}
+                </a>
+              </p>
+            )}
+            {item.contact && (
+              <p class="text-gray-600 dark:text-gray-400">
+                <strong>Contact:</strong>
+                <a href={`tel:${item.contact.replace(/\s+/g, '')}`} class="text-blue-500 hover:underline">
+                  {item.contact}
+                </a>
+              </p>
+            )}
+          </div>
         </div>
-      </div>
-    ))}
+      ))
+    }
   </div>
 </WidgetWrapper>

@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: 'PERMIAS Nasional'
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/permias-horizontal-red.png'
         width: 1200
         height: 628
     type: website
