@@ -36,7 +36,7 @@ export const headerData = {
         },
         {
           text: 'Visa',
-          href: getPermalink('/resources#visa-process'),
+          href: getPermalink('/resources#visaprocess'),
         },
         {
           text: 'Academics',
@@ -44,7 +44,7 @@ export const headerData = {
         },
         {
           text: 'Jobs',
-          href: getPermalink('/resources#job_hunting'),
+          href: getPermalink('/resources#jobhunting'),
         },
         {
           text: 'Research',
