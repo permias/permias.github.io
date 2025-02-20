@@ -3,11 +3,15 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Home',
+      href: getPermalink('/'), 
+    },
+    {
       text: 'About',
       links: [
         {
           text: 'Sejarah Kami',
-          href: getPermalink('/homes/sejarahKami'),
+          href: getPermalink('/sejarah'),
         },
         {
           text: 'Our Team',
@@ -25,7 +29,36 @@ export const headerData = {
     },
     {
       text: 'Resources',
-      href: getPermalink('/landing/Essentials')
+      links: [
+        {
+          text: 'Embassies',
+          href: getPermalink('/resources/#embassies'),
+        },
+        {
+          text: 'Visa',
+          href: getPermalink('/resources/#visaprocess'),
+        },
+        {
+          text: 'Academics',
+          href: getPermalink('/resources/#academics'),
+        },
+        {
+          text: 'Jobs',
+          href: getPermalink('/resources/#jobhunting'),
+        },
+        {
+          text: 'Research',
+          href: getPermalink('/resources/#research'),
+        },
+        {
+          text: 'Scholarships',
+          href: getPermalink('/resources/#scholarships'),
+        },
+        {
+          text: 'Entrepreneurship',
+          href: getPermalink('/resources/#entrepreneurship'),
+        }
+      ],
     },
     // {
     //   text: 'Blog',
@@ -59,15 +92,16 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
+        { text: 'Join our mailing list', href: 'https://groups.google.com/g/permias-nasional' },
         { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
-        { text: '© 2025 PERMIAS NASIONAL', href: '#' }
       ],
     },
     {
       links: [
-        { text: 'About Us', href: '#' },
-        { text: 'Contact', href: '/contact' },
+        { text: 'Sejarah Kami', href: '/homes/sejarahKami' },
+        { text: 'Our Team', href: '/about/team' },
+        { text: 'Chapters', href: '/about/chapters' },
+        { text: 'Contact Us', href: '/contact' },
         // { text: 'Donate', href: '/donate' },
       ],
     },
