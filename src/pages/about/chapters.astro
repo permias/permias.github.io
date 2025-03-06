@@ -2,16 +2,9 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Brands from '~/components/widgets/Brands.astro';
-
-import { YouTube } from 'astro-embed';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
@@ -24,13 +17,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="PERMIAS Cabang"
-    tagline="Cabang-Cabang PERMIAS"
+    title="PERMIAS Chapters"
+    tagline="Discover Your PERMIAS Chapters"
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Daftarkan Cabang anda bersama kami!',
+        text: 'Register your Chapters with us!',
         href: getPermalink('https://forms.gle/bx9bQx9eRBDgLTy57')
       },
     ]}
