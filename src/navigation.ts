@@ -10,7 +10,7 @@ export const headerData = {
       text: 'About',
       links: [
         {
-          text: 'Sejarah Kami',
+          text: 'Our History',
           href: getPermalink('/sejarah'),
         },
         {
@@ -98,7 +98,7 @@ export const footerData = {
     },
     {
       links: [
-        { text: 'Sejarah Kami', href: '/sejarah' },
+        { text: 'Our History', href: '/sejarah' },
         { text: 'Our Team', href: '/about/team' },
         { text: 'Chapters', href: '/about/chapters' },
         { text: 'Contact Us', href: '/contact' },
