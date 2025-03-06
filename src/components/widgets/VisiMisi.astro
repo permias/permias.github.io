@@ -1,14 +1,27 @@
 ---
-const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [] } = Astro.props;
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  id,
+  title = "Visi Misi",
+  subtitle='Menyelaraskan peran dan tujuan PERMIAS Nasional demi mendukung mahasiswa Indonesia di Amerika Serikat.',
+  titleVisi = "Visi",
+  contentVisi = [],
+  titleMisi = "Misi",
+  contentMisi = []
+} = Astro.props;
+
 ---
 
 <section id={id} class="max-w-7xl mx-auto px-6 py-12">
-  <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold mb-4">Visi dan Misi</h2>
+  <!-- <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">{title}</h2>
     <p class="text-lg text-gray-600 dark:text-gray-300">
-      Menyelaraskan peran dan tujuan PERMIAS Nasional demi mendukung mahasiswa Indonesia di Amerika Serikat.
+      {subtitle}
     </p>
-  </div>
+  </div> -->
+  <Headline title={title} subtitle={subtitle} />
+
 
   <!-- Grid Layout -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

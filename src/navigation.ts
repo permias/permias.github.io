@@ -98,7 +98,7 @@ export const footerData = {
     },
     {
       links: [
-        { text: 'Sejarah Kami', href: '/homes/sejarahKami' },
+        { text: 'Sejarah Kami', href: '/sejarah' },
         { text: 'Our Team', href: '/about/team' },
         { text: 'Chapters', href: '/about/chapters' },
         { text: 'Contact Us', href: '/contact' },
