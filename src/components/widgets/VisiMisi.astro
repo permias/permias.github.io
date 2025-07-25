@@ -1,34 +1,35 @@
 ---
-const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [] } = Astro.props;
+const { id, titleVisi = 'Visi', contentVisi, titleMisi = 'Misi', contentMisi = [] } = Astro.props;
 ---
 
 <section id={id} class="max-w-7xl mx-auto px-6 py-12">
   <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold mb-4">Visi dan Misi</h2>
-    <p class="text-lg text-gray-600 dark:text-gray-300">
-      Menyelaraskan peran dan tujuan PERMIAS Nasional demi mendukung mahasiswa Indonesia di Amerika Serikat.
+    <h2 class="text-3xl font-bold text-center mb-4">Visi dan Misi</h2>
+    <p class="text-lg text-center text-gray-600 dark:text-gray-300 mb-8">
+      Berikut adalah visi dan misi dari periode kepengurusan PERMIAS Nasional saat ini yang menjadi panduan dan tujuan
+      utama organisasi dalam mendukung pelajar Indonesia di Amerika Serikat.
     </p>
   </div>
 
   <!-- Grid Layout -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
     <!-- Visi Section -->
-    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto">
-      <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">{titleVisi}</h3>
-      <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2">
-        {contentVisi.map((item) => (
-          <li>{item}</li>
-        ))}
+    <div
+      class="bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-600 rounded-lg p-6 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto"
+    >
+      <h3 class="text-3xl text-center font-semibold text-gray-800 dark:text-white mb-4">{titleVisi}</h3>
+      <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 text-justify">
+        {contentVisi.map((item) => <li>{item}</li>)}
       </ul>
     </div>
 
     <!-- Misi Section -->
-    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto">
-      <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">{titleMisi}</h3>
-      <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2">
-        {contentMisi.map((item) => (
-          <li>{item}</li>
-        ))}
+    <div
+      class="bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-600 rounded-lg p-6 border border-gray-200 dark:border-gray-700 lg:h-[450px] md:h-[550px] h-auto"
+    >
+      <h3 class="text-3xl text-center font-semibold text-gray-800 dark:text-white mb-4">{titleMisi}</h3>
+      <ul class="list-decimal pl-5 text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 text-justify">
+        {contentMisi.map((item) => <li>{item}</li>)}
       </ul>
     </div>
   </div>
