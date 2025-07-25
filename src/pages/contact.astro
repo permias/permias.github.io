@@ -1,52 +1,47 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features4.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Kontak',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
-
-  <HeroText tagline="Contact" title="Let's Connect!" />
-
   <!-- <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="We are available and welcome any type of message!"
+    title="Kirim pesan kepada kami hari ini!"
+    subtitle="Kami siap menerima dan menyambut segala jenis pesan!"
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
-        placeholder: 'Name',
+        label: 'Nama',
+        placeholder: 'Nama',
       },
       {
         type: 'email',
         name: 'email',
         label: 'Email',
-        placeholder: 'name@example.com',
+        placeholder: 'nama@contoh.com',
       },
     ]}
     textarea={{
-      label: 'Message',
-      placeholder: 'I want to connect!'
+      label: 'Pesan',
+      placeholder: 'Saya ingin terhubung!'
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'Dengan mengirimkan formulir kontak ini, Anda mengakui dan menyetujui pengumpulan informasi pribadi Anda.',
     }}
-    description="Our team typically responds within 24 business hours."
+    description="Tim kami biasanya merespons dalam 24 jam kerja."
   /> -->
 
   <!-- Features2 Widget ************** -->
-
   <Features2
-    title="Follow & Subscribe to Our Socials!"
+    title="Hubungi Kami"
+    subtitle="Ingin tahu lebih banyak tentang kehidupan mahasiswa Indonesia di Amerika Serikat? Atau ingin bergabung dengan PERMIAS Nasional? <br><br> Hubungi kami melalui salah satu cara di bawah ini!"
     items={[
       {
         title: 'Email',
@@ -55,41 +50,35 @@ const metadata = {
         href: 'mailto::info@permiasnasional.com',
       },
       {
-        title: 'Newsletter',
-        description: 'Sign Up for Our Mailing List',
-        icon: 'tabler:news',
-        href: 'http://eepurl.com/g-RXeT',
-      },
-      {
         title: 'Instagram',
         description: '@permias.nasional',
         icon: 'tabler:brand-instagram',
         href: 'https://www.instagram.com/permias.nasional/',
       },
+      {
+        title: 'YouTube',
+        description: 'PERMIAS Nasional',
+        icon: 'tabler:brand-youtube',
+        href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw',
+      },
+      {
+        title: 'Google Groups',
+        description: 'Mailing List Kami',
+        icon: 'tabler:news',
+        href: 'https://groups.google.com/g/permias-nasional',
+      },
+      {
+        title: 'LinkedIn',
+        description: 'PERMIAS Nasional',
+        icon: 'tabler:brand-linkedin',
+        href: 'https://www.linkedin.com/company/permiasnasional',
+      },
+      {
+        title: 'Facebook',
+        description: 'permias.nasional',
+        icon: 'tabler:brand-facebook',
+        href: 'https://www.facebook.com/permias.nasional',
+      },
     ]}
   />
-  <div class="lg:mt-[-150px] mt-[-60px] mb-[100px]">
-    <Features2
-      items={[
-        {
-          title: 'Facebook',
-          description: '@permias.nasional',
-          icon: 'tabler:brand-facebook',
-          href: 'https://instagram.com/',
-        },
-        {
-          title: 'LinkedIn',
-          description: 'PERMIAS Nasional',
-          icon: 'tabler:brand-linkedin',
-          href: 'https://www.linkedin.com/company/permiasnasional',
-        },
-        {
-          title: 'YouTube',
-          description: 'PERMIAS Nasional',
-          icon: 'tabler:brand-youtube',
-          href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw',
-        },
-      ]}
-    />
-  </div>
 </Layout>

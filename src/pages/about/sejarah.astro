@@ -1,0 +1,153 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import PermiasTimeline from '~/components/widgets/TimelinePermias.astro';
+import Hero from '~/components/widgets/HeroHome.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import VisiMisi from '~/components/widgets/VisiMisi.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Sejarah Kami',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget -->
+  <Hero tagline="PERMIAS NASIONAL">
+    <Fragment slot="title"> Sejarah Kami </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="YXJGqoOUEjc" title="Why are you proud to be Indonesian? | Ignite Indonesia by PERMIAS Nasional" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Perjalanan PERMIAS dimulai sejak
+      <span class="font-bold">Kongres PERMIAS I</span> di <span class="font-bold">Washington, D.C</span> pada tanggal
+      <span class="font-bold">24 Desember 1961</span>.
+    </Fragment>
+  </Hero>
+
+  <PermiasTimeline
+    id="permias-info"
+    title="Tentang PERMIAS Nasional"
+    subtitle="Mengapa PERMIAS Nasional terbentuk?"
+    boxes={[
+      'PERMIAS didirikan sebagai <b>organisasi nasional</b> untuk mempersatukan mahasiswa Indonesia di Amerika Serikat, melengkapi organisasi lokal seperti <b>PERPINDO di New York City</b> dan <b>PERMABA di San Francisco</b> yang terbentuk lebih dahulu.',
+      'Seiring bertambahnya jumlah mahasiswa Indonesia, <b>cabang-cabang PERMIAS berkembang di berbagai wilayah</b> baik pada tingkat universitas maupun regional. PERMIAS Nasional mengambil peran sebagai <b>wadah pemersatu</b> bagi seluruh organisasi pelajar Indonesia di Amerika Serikat.',
+      '<b>Perkembangan teknologi komunikasi</b> memudahkan pelajar Indonesia untuk terhubung, berbagi informasi, dan berkolaborasi, sehingga <b>memperkuat jaringan pelajar Indonesia di seluruh Amerika Serikat</b>.',
+    ]}
+  />
+
+  <!-- Features2 Widget -->
+  <VisiMisi
+    id="visi-misi"
+    contentVisi={[
+      'Sustainably expand opportunities for Indonesian students in the U.S. by cultivating a strong, empowered community rooted in collaboration and mutual support.',
+      'We strive to create a resilient network that continually opens new pathways for academic, personal, and professional growth, ensuring that Indonesian students can thrive and succeed in the U.S. and beyond.',
+    ]}
+    contentMisi={[
+      'Uphold an inclusive and welcoming network that enriches the experience of Indonesian students through dedicated programs and targeted initiatives.',
+      'We aim to foster a supportive environment that celebrates Indonesian culture, provides resources for personal and professional development, and ensures a well-rounded, holistic experience for students as they navigate their academic journeys in the U.S.',
+    ]}
+  />
+
+  <!-- Features2 Widget -->
+
+  <Features2
+    title="Kegiatan PERMIAS Nasional"
+    subtitle="PERMIAS Nasional menghadirkan berbagai acara, kerja sama, dan forum komunikasi bagi mahasiswa Indonesia di Amerika Serikat."
+    items={[
+      {
+        title: 'Sesi informasi',
+        description:
+          'PERMIAS Nasional bekerja sama dengan universitas, alumni, dan perwakilan pemerintah untuk menghadirkan sesi informasi seputar peluang dan tantangan bagi mahasiswa Indonesia di Amerika Serikat.',
+        icon: 'tabler:info-circle',
+      },
+      {
+        title: 'Webinar dan konten akademik',
+        description:
+          'Untuk menambah wawasan mahasiswa tentang isu terkini dan perkembangan terbaru di berbagai bidang, PERMIAS Nasional bekerja sama dengan akademisi dan lembaga penelitian untuk menyelenggarakan webinar akademik dan konten edukatif di kanal sosial media kami.',
+        icon: 'tabler:video',
+      },
+      {
+        title: 'Forum diskusi',
+        description:
+          'PERMIAS Nasional menyediakan forum diskusi terbuka, di mana mahasiswa dari berbagai daerah bisa saling terhubung, berbagi cerita, dan saling mendukung satu sama lain.',
+        icon: 'tabler:messages',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ******************
+
+  <Stats
+    title="Discover the impressive impact of Astrowind"
+    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    stats={[
+      { title: 'Downloads', amount: '182K' },
+      { title: 'Websites Launched', amount: '87' },
+      { title: 'User Ratings', amount: '4.8' },
+      { title: 'Satisfied Clients', amount: '116K' },
+    ]}
+  /> -->
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Partnerships & Collaborations"
+    subtitle="Terima kasih kepada para sponsor yang telah mendukung kami.<br><br>Dukungan Anda sangat berarti dalam mewujudkan visi dan misi PERMIAS Nasional untuk mendukung mahasiswa Indonesia di Amerika Serikat."
+    icons={[]}
+    images={[
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+    ]}
+  />
+</Layout>

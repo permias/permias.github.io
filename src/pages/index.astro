@@ -9,38 +9,38 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
+  <!-- Hero Widget -->
   <Hero
-    tagline="Welcome to PERMIAS Nasional"
+    tagline="Persatuan Mahasiswa Indonesia di Amerika Serikat"
     actions={[
       {
         variant: 'primary',
-        text: 'Join our mailing list',
+        text: 'Gabung dalam milis kami',
         href: 'https://groups.google.com/g/permias-nasional?pli=1',
         target: '_blank',
         icon: 'tabler:mail',
       },
       {
         variant: 'primary',
-        text: 'Get in touch with a PERMIAS Chapter near you!',
+        text: 'Cari PERMIAS chapter terdekat',
         href: '/about/chapters',
         icon: 'tabler:map-2',
       },
     ]}
     image={{
       src: '~/assets/images/home-animation.gif',
-      alt: 'Activity Video',
+      alt: 'Video aktivitas PERMIAS Nasional',
     }}
   >
     <Fragment slot="title">
-      Join the community of <span class="text-accent dark:text-white highlight">Indonesian</span> students in the United
-      States!
+      Jadi bagian dari komunitas pelajar <span class="text-accent">Indonesia</span> di Amerika Serikat!
     </Fragment>
 
     <Fragment slot="subtitle">
-      The PERMIAS Community is here to <span class="font-semibold">support</span> you in achieving your professional goals,
-      while providing an inclusive community of Indonesian students and alumni across the United States.
+      PERMIAS hadir untuk <span class="font-semibold">mendukung</span> kamu dalam mencapai tujuan <span
+        class="font-semibold">akademik</span
+      > dan <span class="font-semibold">profesional</span>
+      melalui komunitas inklusif bagi pelajar dan alumni Indonesia di seluruh Amerika Serikat.
     </Fragment>
   </Hero>
 </Layout>
