@@ -12,6 +12,23 @@ interface USMapProps {
   onSelectChapter?: (name: string) => void;
 }
 
+// Tailwind color classes mapped to region
+const regionColorMap: Record<string, string> = {
+  "East Coast I": "#2563eb",
+  "East Coast II": "#1d4ed8",
+  "East Coast III": "#3b82f6",
+  "Midwest I": "#059669",
+  "Midwest II": "#10b981",
+  "South": "#f59e42",
+  "West Coast I": "#f43f5e",
+  "West Coast II": "#eab308",
+};
+
+const getRegionColor = (region?: string) => {
+  if (!region) return "#F53";
+  return regionColorMap[region] || "#F53";
+};
+
 const USMap: React.FC<USMapProps> = ({ highlightedChapter, onSelectChapter }) => {
   const [tooltip, setTooltip] = useState<string | null>(null);
   const [tooltipPos, setTooltipPos] = useState<{ x: number; y: number } | null>(null);
@@ -26,70 +43,28 @@ const USMap: React.FC<USMapProps> = ({ highlightedChapter, onSelectChapter }) =>
     setCenter([-98, 39]);
   };
 
-  // Map region name to Tailwind color value
-  const getRegionColor = (region?: string) => {
-    if (!region) return '#F53';
-    const key = region.toLowerCase().replace(/ /g, '-');
-    // Tailwind colors are available as CSS variables, so we use getComputedStyle
-    if (typeof window !== 'undefined') {
-      const cssVar = getComputedStyle(document.documentElement).getPropertyValue(`--tw-color-region-${key}`);
-      if (cssVar) return cssVar.trim();
-    }
-    // fallback
-    return '#F53';
-  };
-
+  // Cache the zoom scaling for performance
   const zoomScale = Math.sqrt(mapZoom);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
-      <div style={{ position: "absolute", bottom: 20, right: 20, zIndex: 10, display: "flex", gap: 8 }}>
+    <div className="relative w-full h-full">
+      <div className="absolute bottom-5 right-5 z-10 flex gap-2">
         <button
           onClick={zoomIn}
-          style={{
-            padding: "6px 12px",
-            borderRadius: 4,
-            background: "#F53",
-            color: "#fff",
-            border: "none",
-            cursor: "pointer",
-            transition: "background 0.2s",
-          }}
-          onMouseEnter={e => (e.currentTarget.style.background = "#d32f2f")}
-          onMouseLeave={e => (e.currentTarget.style.background = "#F53")}
+          className="px-3 py-1.5 rounded bg-primary text-white border-none cursor-pointer transition-colors hover:bg-secondary"
         >
           +
         </button>
         <button
           onClick={zoomOut}
-          style={{
-            padding: "6px 12px",
-            borderRadius: 4,
-            background: "#222",
-            color: "#fff",
-            border: "none",
-            cursor: "pointer",
-            transition: "background 0.2s",
-          }}
-          onMouseEnter={e => (e.currentTarget.style.background = "#444")}
-          onMouseLeave={e => (e.currentTarget.style.background = "#222")}
+          className="px-3 py-1.5 rounded bg-neutral-900 text-white border-none cursor-pointer transition-colors hover:bg-neutral-700"
         >
           -
         </button>
         <button
           onClick={resetViewport}
-          style={{
-            padding: "6px 12px",
-            borderRadius: 4,
-            background: "#DDD",
-            color: "#222",
-            border: "none",
-            cursor: "pointer",
-            transition: "background 0.2s",
-          }}
+          className="px-3 py-1.5 rounded bg-neutral-200 text-neutral-900 border-none cursor-pointer transition-colors hover:bg-neutral-400"
           title="Reset zoom"
-          onMouseEnter={e => (e.currentTarget.style.background = "#bbb")}
-          onMouseLeave={e => (e.currentTarget.style.background = "#DDD")}
         >
           &#8634;
         </button>
@@ -169,11 +144,11 @@ const USMap: React.FC<USMapProps> = ({ highlightedChapter, onSelectChapter }) =>
             >
               <circle
                 r={8 / zoomScale}
-                fill={'var(--aw-color-secondary)'}
+                fill={'#ED1D25'}
                 stroke="#FFF"
-                strokeWidth={1 / zoomScale}
+                strokeWidth={2 / zoomScale}
                 opacity={1}
-                style={{ filter: 'drop-shadow(0 0 8px var(--aw-color-secondary))' }}
+                style={{ filter: 'drop-shadow(0 0 8px #ED1D25)' }}
               />
             </Marker>
           ))}
@@ -181,17 +156,10 @@ const USMap: React.FC<USMapProps> = ({ highlightedChapter, onSelectChapter }) =>
       </ComposableMap>
       {tooltip && tooltipPos && (
         <div
+          className="fixed z-[1000] pointer-events-none text-white bg-neutral-900 px-2.5 py-1 rounded-lg text-[0.95rem]"
           style={{
-            position: "fixed",
             left: tooltipPos.x,
             top: tooltipPos.y - 30,
-            background: "#222",
-            color: "#fff",
-            padding: "4px 10px",
-            borderRadius: "6px",
-            pointerEvents: "none",
-            zIndex: 1000,
-            fontSize: "0.95rem"
           }}
         >
           {tooltip}
