@@ -12,9 +12,15 @@ type Chapter = {
   association?: string[];
 };
 
-export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
+export default function ChapterList({ chapters, onHighlightChapter, searchTerm, onSearchTermChange }: {
+  chapters: Chapter[],
+  onHighlightChapter?: (name: string) => void,
+  searchTerm?: string,
+  onSearchTermChange?: (term: string) => void
+}) {
   const [filter, setFilter] = useState("all")
-  const [searchTerm, setSearchTerm] = useState("")
+  const [internalSearchTerm, setInternalSearchTerm] = useState("")
+  const effectiveSearchTerm = searchTerm !== undefined ? searchTerm : internalSearchTerm;
 
   const regions = [
     "all",
@@ -23,7 +29,7 @@ export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
 
   const filteredChapters = chapters.filter((chapter) => {
     const matchesRegion = filter === "all" || chapter.region === filter;
-    const search = searchTerm.trim().toLowerCase();
+    const search = effectiveSearchTerm.trim().toLowerCase();
     const matchesSearch =
       !search ||
       chapter.name.toLowerCase().includes(search) ||
@@ -32,6 +38,13 @@ export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
       (chapter.association && chapter.association.some(uni => uni.toLowerCase().includes(search)));
     return matchesRegion && matchesSearch;
   })
+
+  // Map region name to Tailwind class
+  const getRegionBgClass = (region?: string) => {
+    if (!region) return 'bg-gray-300';
+    const key = region.toLowerCase().replace(/ /g, '-');
+    return `bg-region-${key}`;
+  };
 
   return (
     <div className="grid gap-4">
@@ -43,8 +56,11 @@ export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
             placeholder="Masukan nama universitas, chapter, atau region..."
             className="w-full pl-10 pr-4 py-2 text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-900
             border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            value={effectiveSearchTerm}
+            onChange={(e) => {
+              setInternalSearchTerm(e.target.value);
+              if (onSearchTermChange) onSearchTermChange(e.target.value);
+            }}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +102,8 @@ export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
             <div
               key={chapter.name}
               className="relative flex flex-col justify-between h-full p-4 bg-white dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors shadow-sm border border-gray-200 dark:border-gray-700 cursor-pointer group"
+              onMouseEnter={() => onHighlightChapter && onHighlightChapter(chapter.name)}
+              onMouseLeave={() => onHighlightChapter && onHighlightChapter("")}
             >
               <div className="flex items-center gap-3 mb-2 ">
           <div>
@@ -105,7 +123,11 @@ export default function ChapterList({ chapters }: { chapters: Chapter[] }) {
               </div>
               <div className="flex items-center gap-2 mt-auto">
           {chapter.region && (
-            <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">{chapter.region}</span>
+            <span
+              className={`text-xs px-2 py-1 rounded ${getRegionBgClass(chapter.region)} text-white font-medium`}
+            >
+              {chapter.region}
+            </span>
           )}
           {chapter.level && (
             <span
