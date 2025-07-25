@@ -22,7 +22,7 @@ export default function ChapterPage() {
       </div>
       <ChapterList chapters={chapters.map(chapter => ({
         ...chapter,
-        altitude: chapter.altitude === null ? undefined : chapter.altitude,
+        latitude: chapter.latitude === null ? undefined : chapter.latitude,
         longitude: chapter.longitude === null ? undefined : chapter.longitude,
       }))} />
       </div>

@@ -7,7 +7,7 @@ type Chapter = {
   region?: string;
   level?: string;
   social_media?: { instagram?: string };
-  altitude?: number;
+  latitude?: number;
   longitude?: number;
   association?: string[];
 };
