@@ -11,20 +11,16 @@ export const headerData = {
       links: [
         {
           text: 'Sejarah Kami',
-          href: getPermalink('/sejarah'),
-        },
-        {
-          text: 'Our Team',
-          href: getPermalink('/about/team'),
+          href: getPermalink('/about/sejarah'),
         },
         {
           text: 'Chapters',
           href: getPermalink('/about/chapters'),
         },
         {
-          text: 'Contact Us',
-          href: getPermalink('/contact'),
-        },
+          text: 'Tim Pengurus',
+          href: getPermalink('/about/team'),
+        }
       ],
     },
     {
@@ -60,6 +56,10 @@ export const headerData = {
         }
       ],
     },
+    {
+      text: 'Hubungi Kami',
+      href: getPermalink('/contact'),
+    },
     // {
     //   text: 'Blog',
     //   links: [
@@ -92,16 +92,16 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'Join our mailing list', href: 'https://groups.google.com/g/permias-nasional' },
-        { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
+        { text: 'Gabung dalam milis kami', href: 'https://groups.google.com/g/permias-nasional' },
+        { text: 'Hubungi kami di info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
       ],
     },
     {
       links: [
-        { text: 'Sejarah Kami', href: '/homes/sejarahKami' },
-        { text: 'Our Team', href: '/about/team' },
+        { text: 'Sejarah Kami', href: '/about/sejarah' },
+        { text: 'Tim Pengurus', href: '/about/team' },
         { text: 'Chapters', href: '/about/chapters' },
-        { text: 'Contact Us', href: '/contact' },
+        { text: 'Hubungi Kami', href: '/contact' },
         // { text: 'Donate', href: '/donate' },
       ],
     },
