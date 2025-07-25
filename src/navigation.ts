@@ -20,7 +20,7 @@ export const headerData = {
         {
           text: 'Tim Pengurus',
           href: getPermalink('/about/team'),
-        }
+        },
       ],
     },
     {
