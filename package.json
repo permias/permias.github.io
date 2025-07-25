@@ -37,6 +37,7 @@
     "lodash.merge": "^4.6.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-simple-maps": "^3.0.0",
     "unpic": "^3.22.0"
   },
   "devDependencies": {
@@ -70,6 +71,17 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "unist-util-visit": "^5.0.0"
+  },
+  "overrides": {
+    "react-simple-maps": {
+      "d3-zoom": "^3.0.0",
+      "d3-interpolate": "^3.0.1",
+      "d3-color": "^3.1.0",
+      "d3-geo": "^3.1.0",
+      "d3-selection": "^3.0.0",
+      "react": "^16.8.0 || 17.x || 18.x || 19.x",
+      "react-dom": "^16.8.0 || 17.x || 18.x || 19.x"
+    }
   },
   "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
 }
