@@ -25,8 +25,8 @@ const regionColorMap: Record<string, string> = {
 };
 
 const getRegionColor = (region?: string) => {
-  if (!region) return "#F53";
-  return regionColorMap[region] || "#F53";
+  if (!region) return "#F53"; // Default color if no region is provided
+  return regionColorMap[region] || "#F53"; // Fallback color if region is not in the map
 };
 
 const USMap: React.FC<USMapProps> = ({ highlightedChapter, onSelectChapter }) => {
