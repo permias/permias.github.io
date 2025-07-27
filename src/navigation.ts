@@ -10,20 +10,16 @@ export const headerData = {
       text: 'About',
       links: [
         {
-          text: 'Our History',
-          href: getPermalink('/sejarah'),
-        },
-        {
-          text: 'Our Team',
-          href: getPermalink('/about/team'),
+          text: 'Sejarah Kami',
+          href: getPermalink('/about/sejarah'),
         },
         {
           text: 'Chapters',
           href: getPermalink('/about/chapters'),
         },
         {
-          text: 'Contact Us',
-          href: getPermalink('/contact'),
+          text: 'Tim Pengurus',
+          href: getPermalink('/about/team'),
         },
       ],
     },
@@ -60,6 +56,10 @@ export const headerData = {
         }
       ],
     },
+    {
+      text: 'Hubungi Kami',
+      href: getPermalink('/contact'),
+    },
     // {
     //   text: 'Blog',
     //   links: [
@@ -92,16 +92,16 @@ export const footerData = {
   links: [
     {
       links: [
-        { text: 'SIGN UP FOR OUR NEWSLETTER', href: '#' },
-        { text: 'info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
+        { text: '<b>Milis di Google Groups</b><br>https://groups.google.com/g/permias-nasional', href: 'https://groups.google.com/g/permias-nasional' },
+        { text: '<b>Hubungi kami di</b><br>info@permiasnasional.com', href: 'mailto::info@permiasnasional.com' },
       ],
     },
     {
       links: [
-        { text: 'Our History', href: '/sejarah' },
-        { text: 'Our Team', href: '/about/team' },
+        { text: 'Sejarah Kami', href: '/about/sejarah' },
+        { text: 'Tim Pengurus', href: '/about/team' },
         { text: 'Chapters', href: '/about/chapters' },
-        { text: 'Contact Us', href: '/contact' },
+        { text: 'Hubungi Kami', href: '/contact' },
         // { text: 'Donate', href: '/donate' },
       ],
     },
@@ -113,10 +113,6 @@ export const footerData = {
         { text: 'YouTube', href: 'https://www.youtube.com/channel/UCHjEGs027y3g--ZH5BCS7tw' },
       ],
     },
-  ],
-  secondaryLinks: [
-    // { text: 'Terms', href: getPermalink('/terms') },
-    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/permias.nasional/' },

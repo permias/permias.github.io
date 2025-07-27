@@ -1,0 +1,857 @@
+[
+  {
+    "name": "Permias ISANU",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@isanu_"
+    },
+    "association": [
+      "Northeastern University"
+    ],
+    "latitude": 42.3398,
+    "longitude": -71.0892
+  },
+  {
+    "name": "ISA BU",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@the.isabu"
+    },
+    "association": [
+      "Boston University"
+    ],
+    "latitude": 42.3505,
+    "longitude": -71.1054
+  },
+  {
+    "name": "Permias Massachusetts",
+    "region": "East Coast I",
+    "level": "Regional",
+    "social_media": {
+      "instagram": "@permiasmass"
+    },
+    "association": [
+      
+    ],
+    "latitude": 42.4072,
+    "longitude": -71.3824
+  },
+  {
+    "name": "BIA Babson",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@bia.babson"
+    },
+    "association": [
+      "Babson College"
+    ],
+    "latitude": 42.2996,
+    "longitude": -71.2637
+  },
+  {
+    "name": "AIS at MIT",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@indonesia.mit"
+    },
+    "association": [
+      "Massachusetts Institute of Technology"
+    ],
+    "latitude": 42.3601,
+    "longitude": -71.0942
+  },
+  {
+    "name": "Permias Rhode Island",
+    "region": "East Coast I",
+    "level": "Regional",
+    "social_media": {
+      "instagram": "@permiasri"
+    },
+    "association": [
+      "Brown University",
+      "University of Rhode Island"
+    ],
+    "latitude": 41.8268,
+    "longitude": -71.4025
+  },
+  {
+    "name": "Harvard ISA",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@indonesiaharvard"
+    },
+    "association": [
+      "Harvard University"
+    ],
+    "latitude": 42.3770,
+    "longitude": -71.1167
+  },
+  {
+    "name": "ISA University of New Hampshire",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@isaunh"
+    },
+    "association": [
+      "University of New Hampshire"
+    ],
+    "latitude": 43.1389,
+    "longitude": -70.9345
+  },
+  {
+    "name": "ISA Amherst",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@isa.umass"
+    },
+    "association": [
+      "University of Massachusetts Amherst"
+    ],
+    "latitude": 42.3868,
+    "longitude": -72.5301
+  },
+  {
+    "name": "Indonesia WPI",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@indonesia.wpi"
+    },
+    "association": [
+      "Worcester Polytechnic Institute"
+    ],
+    "latitude": 42.2746,
+    "longitude": -71.8083
+  },
+  {
+    "name": "Berklee Indonesia",
+    "region": "East Coast I",
+    "level": "University",
+    "social_media": {
+      "instagram": "@berkleeindo"
+    },
+    "association": [
+      "Berklee College of Music"
+    ],
+    "latitude": 42.3464,
+    "longitude": -71.0877
+  },
+  {
+    "name": "Permias Penn State",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permiaspennstate" },
+    "association": ["Pennsylvania State University"],
+    "latitude": 40.7982,
+    "longitude": -77.8599
+  },
+  {
+    "name": "ISCMU (Carnegie Mellon)",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@cmu_permias" },
+    "association": ["Carnegie Mellon University"],
+    "latitude": 40.4433,
+    "longitude": -79.9438
+  },
+  {
+    "name": "Permias NYC",
+    "region": "East Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasnyc" },
+    "association": ["New York City"],
+    "latitude": 40.7128,
+    "longitude": -74.0060
+  },
+  {
+    "name": "Columbia Indonesia",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@indonesiacolumbia" },
+    "association": ["Columbia University"],
+    "latitude": 40.8075,
+    "longitude": -73.9626
+  },
+  {
+    "name": "ISA at Pitt",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permias.upitt" },
+    "association": ["University of Pittsburgh"],
+    "latitude": 40.4406,
+    "longitude": -79.9959
+  },
+  {
+    "name": "Permias Syracuse",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permiascuse" },
+    "association": ["Syracuse University"],
+    "latitude": 43.0389,
+    "longitude": -76.1350
+  },
+  {
+    "name": "Permias New Jersey",
+    "region": "East Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasnj" },
+    "association": ["Rutgers University", "Princeton University"],
+    "latitude": 40.3445,
+    "longitude": -74.5081
+  },
+  {
+    "name": "Cornell Indonesian Association",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@indonesiaatcornell" },
+    "association": ["Cornell University"],
+    "latitude": 42.4534,
+    "longitude": -76.4735
+  },
+  {
+    "name": "Permias Rochester",
+    "region": "East Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasrochesterny" },
+    "association": ["University of Rochester"],
+    "latitude": 43.1230,
+    "longitude": -77.6328
+  },
+  {
+    "name": "NYU Indonesia Community",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@nyu.indonesia" },
+    "association": ["New York University"],
+    "latitude": 40.7306,
+    "longitude": -73.9352
+  },
+  {
+    "name": "Penncasila",
+    "region": "East Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@penncasila" },
+    "association": ["University of Pennsylvania"],
+    "latitude": 39.9526,
+    "longitude": -75.1652
+  },
+  {
+    "name": "Permias DC",
+    "region": "East Coast III",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasdc" },
+    "association": [],
+    "latitude": 38.9072,
+    "longitude": -77.0369
+  },
+  {
+    "name": "Permias at NC State University",
+    "region": "East Coast III",
+    "level": "University",
+    "social_media": { "instagram": "@permiasncstate" },
+    "association": ["North Carolina State University"],
+    "latitude": 35.7855,
+    "longitude": -78.6582
+  },
+  {
+    "name": "Permias Virginia Tech",
+    "region": "East Coast III",
+    "level": "University",
+    "social_media": { "instagram": "@permiasvt" },
+    "association": ["Virginia Tech"],
+    "latitude": 37.2284,
+    "longitude": -80.4234
+  },
+  {
+    "name": "Indonesian Student Association at John Hopkins",
+    "region": "East Coast III",
+    "level": "University",
+    "social_media": { "instagram": "@indonesiahopkins" },
+    "association": ["Johns Hopkins University"],
+    "latitude": 39.3289,
+    "longitude": -76.6205
+  },
+  {
+    "name": "Permias WV",
+    "region": "East Coast III",
+    "level": "Regional",
+    "social_media": { "instagram": "@permias.wv" },
+    "association": ["West Virginia University"],
+    "latitude": 38.4199,
+    "longitude": -81.9640
+  },
+  {
+    "name": "Permias UoSC",
+    "region": "East Coast III",
+    "level": "University",
+    "social_media": { "instagram": "@permias.uofsc" },
+    "association": ["University of South Carolina"],
+    "latitude": 33.9968,
+    "longitude": -80.2190
+  },
+  {
+    "name": "Permias Michigan",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@indonesia.umich" },
+    "association": ["University of Michigan"],
+    "latitude": 42.2780,
+    "longitude": -83.7382
+  },
+  {
+    "name": "PERMIAS Ohio University",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permias_ou" },
+    "association": ["Ohio University"],
+    "latitude": 39.3244,
+    "longitude": -82.1012
+  },
+  {
+    "name": "Permias Kalamazoo",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiaskalamazoo" },
+    "association": ["Western Michigan University"],
+    "latitude": 42.2917,
+    "longitude": -85.5872
+  },
+  {
+    "name": "PERMIAS Columbus",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiascolumbus" },
+    "association": ["Ohio State University"],
+    "latitude": 39.9612,
+    "longitude": -82.9988
+  },
+  {
+    "name": "Permias MSU",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permias.msu" },
+    "association": ["Michigan State University"],
+    "latitude": 42.7369,
+    "longitude": -84.4839
+  },
+  {
+    "name": "Permias Purdue",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiaspurdue" },
+    "association": ["Purdue University"],
+    "latitude": 40.4254,
+    "longitude": -86.9090
+  },
+  {
+    "name": "Permias Notre Dame",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasnd" },
+    "association": ["University of Notre Dame"],
+    "latitude": 41.7039,
+    "longitude": -86.2382
+  },
+  {
+    "name": "Permias Bloomington",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasbloomington" },
+    "association": ["Indiana University Bloomington"],
+    "latitude": 39.1653,
+    "longitude": -86.5264
+  },
+  {
+    "name": "Missouri ISA",
+    "region": "Midwest I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasmissouri" },
+    "association": ["University of Missouri"],
+    "latitude": 38.9517,
+    "longitude": -92.3341
+  },
+  {
+    "name": "Permias Kansas",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@permiaskansas" },
+    "association": ["University of Kansas"],
+    "latitude": 38.9517,
+    "longitude": -95.2640
+  },
+  {
+    "name": "Permias Ames",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@permias.ames" },
+    "association": ["Iowa State University"],
+    "latitude": 42.0347,
+    "longitude": -93.6208
+  },
+  {
+    "name": "Permias UIUC",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasuiuc" },
+    "association": ["University of Illinois Urbana-Champaign"],
+    "latitude": 40.1106,
+    "longitude": -88.2073
+  },
+  {
+    "name": "PERMIAS Chicago",
+    "region": "Midwest II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiaschicago" },
+    "association": ["University of Chicago"],
+    "latitude": 41.7886,
+    "longitude": -87.5987
+  },
+  {
+    "name": "IDSA Northwestern University",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@idsa.nu" },
+    "association": ["Northwestern University"],
+    "latitude": 42.0512,
+    "longitude": -87.6752
+  },
+  {
+    "name": "Permias Madison",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasmadison" },
+    "association": ["University of Wisconsin-Madison"],
+    "latitude": 43.0731,
+    "longitude": -89.4012
+  },
+  {
+    "name": "Indos at KU (ISAKU)",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@indoatku" },
+    "association": ["University of Kansas"],
+    "latitude": 38.9517,
+    "longitude": -95.2640
+  },
+  {
+    "name": "Permias Minnesota",
+    "region": "Midwest II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasmn" },
+    "association": ["University of Minnesota"],
+    "latitude": 44.9778,
+    "longitude": -93.2650
+  },
+  {
+    "name": "Permias Texas A&M",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@permiastamu" },
+    "association": ["Texas A&M University"],
+    "latitude": 30.6096,
+    "longitude": -96.3429
+  },
+  {
+    "name": "Permias Austin",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@permiasaustin" },
+    "association": ["University of Texas at Austin"],
+    "latitude": 30.2849,
+    "longitude": -97.7341
+  },
+  {
+    "name": "Permias Arkansas",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@permiasarkansas" },
+    "association": ["University of Arkansas"],
+    "latitude": 34.7465,
+    "longitude": -92.2896
+  },
+  {
+    "name": "Permias Georgia Tech",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@isa.gatech" },
+    "association": ["Georgia Institute of Technology"],
+    "latitude": 33.7756,
+    "longitude": -84.3963
+  },
+  {
+    "name": "Permias Auburn",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@ais.auburn" },
+    "association": ["Auburn University"],
+    "latitude": 32.6080,
+    "longitude": -85.4808
+  },
+  {
+    "name": "Permias Oklahoma",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@permiasok" },
+    "association": ["University of Oklahoma"],
+    "latitude": 35.2226,
+    "longitude": -97.4395
+  },
+  {
+    "name": "Permias UF (Gainesville)",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@permiasgainesville" },
+    "association": ["University of Florida Gainesville"],
+    "latitude": 29.6516,
+    "longitude": -82.3248
+  },
+  {
+    "name": "Permias Dallas",
+    "region": "South",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasdallas" },
+    "association": [],
+    "latitude": 32.7767,
+    "longitude": -96.7970
+  },
+  {
+    "name": "ISA GSU",
+    "region": "South",
+    "level": "University",
+    "social_media": { "instagram": "@isa.gsu" },
+    "association": ["Georgia State University"],
+    "latitude": 33.7490,
+    "longitude": -84.3880
+  },
+  {
+    "name": "BYUH-Indonesia",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@byuhindonesianchapter" },
+    "association": ["Brigham Young University–Hawaii"],
+    "latitude": 21.3891,
+    "longitude": -157.9707
+  },
+  {
+    "name": "Permias San Diego",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permias.sdia" },
+    "association": ["University of California, San Diego (UCSD)"],
+    "latitude": 32.8801,
+    "longitude": -117.2340
+  },
+  {
+    "name": "ISUCI",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permias.isuci" },
+    "association": ["University of California, Irvine (UCI)"],
+    "latitude": 33.6694,
+    "longitude": -117.8272
+  },
+  {
+    "name": "Permias SMC",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiassmc" },
+    "association": ["Santa Monica College"],
+    "latitude": 34.0242,
+    "longitude": -118.4965
+  },
+  {
+    "name": "Permias Pasadena",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiaspasadena" },
+    "association": [],
+    "latitude": 34.1478,
+    "longitude": -118.1445
+  },
+  {
+    "name": "Permias LA",
+    "region": "West Coast I",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasla" },
+    "association": [],
+    "latitude": 34.0522,
+    "longitude": -118.2437
+  },
+  {
+    "name": "Permias Hawaii",
+    "region": "West Coast I",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiashawaii" },
+    "association": ["Hawaii"],
+    "latitude": 21.3069,
+    "longitude": -157.8583
+  },
+  {
+    "name": "ILMU",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@indoatlmu" },
+    "association": ["Loyola Marymount University (LMU)"],
+    "latitude": 33.9617,
+    "longitude": -118.4250
+  },
+  {
+    "name": "IMAPA USA Canada",
+    "region": "West Coast I",
+    "level": "National",
+    "social_media": { "instagram": "@imapausacanada" },
+    "association": [],
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "USC ASIS",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@uscasis" },
+    "association": ["University of Southern California"],
+    "latitude": 34.0219,
+    "longitude": -118.4814
+  },
+  {
+    "name": "Pepperdine BOIS",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@pepperdine.bois" },
+    "association": ["Pepperdine University"],
+    "latitude": 34.0259,
+    "longitude": -118.7798
+  },
+  {
+    "name": "IBSA Bruins UCLA",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@bruins.ibsa" },
+    "association": ["University of California, Los Angeles (UCLA)"],
+    "latitude": 34.0682,
+    "longitude": -118.4455
+  },
+  {
+    "name": "Permias Phoenix",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasphoenix" },
+    "association": ["University of Phoenix"],
+    "latitude": 33.4484,
+    "longitude": -112.0740
+  },
+  {
+    "name": "Permias Tucson",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiastucson" },
+    "association": [],
+    "latitude": 32.2226,
+    "longitude": -110.9747
+  },
+  {
+    "name": "Permias Claremont",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasclaremont" },
+    "association": [],
+    "latitude": 34.0974,
+    "longitude": -117.7156
+  },
+  {
+    "name": "Permias Utah",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasutah" },
+    "association": [],
+    "latitude": 40.7608,
+    "longitude": -111.8910
+  },
+  {
+    "name": "Permias CSULB",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiaslb" },
+    "association": ["California State University, Long Beach"],
+    "latitude": 33.7669,
+    "longitude": -118.1881
+  },
+  {
+    "name": "Permias Golden - Colorado",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permiasgolden.colorado" },
+    "association": [],
+    "latitude": 39.7555,
+    "longitude": -105.2211
+  },
+  {
+    "name": "Biola Bisa",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@biolabisa" },
+    "association": ["Biola University"],
+    "latitude": 33.9176,
+    "longitude": -118.1134
+  },
+  {
+    "name": "Permias Art Center",
+    "region": "West Coast I",
+    "level": "University",
+    "social_media": { "instagram": "@permias_ac" },
+    "association": ["Art Center College of Design"],
+    "latitude": 34.0736,
+    "longitude": -118.1502
+  },
+  {
+    "name": "Permias USF",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permias.usfca" },
+    "association": ["University of San Francisco"],
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  {
+    "name": "Stanford ISA",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@stanford.indonesia" },
+    "association": ["Stanford University"],
+    "latitude": 37.4275,
+    "longitude": -122.1697
+  },
+  {
+    "name": "Berkeley BISA",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@berkeleybisa" },
+    "association": ["University of California, Berkeley (UCB)"],
+    "latitude": 37.8715,
+    "longitude": -122.2730
+  },
+  {
+    "name": "Permias De Anza",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permias_deanza" },
+    "association": ["De Anza College"],
+    "latitude": 37.3329,
+    "longitude": -122.0308
+  },
+  {
+    "name": "Permias UC Davis",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasucd" },
+    "association": ["University of California, Davis (UCD)"],
+    "latitude": 38.5382,
+    "longitude": -121.7617
+  },
+  {
+    "name": "Permias SFBA",
+    "region": "West Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permias.sfba" },
+    "association": [],
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  {
+    "name": "IndoDVC",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@indodvc" },
+    "association": ["Diablo Valley College"],
+    "latitude": 38.0049,
+    "longitude": -121.8058
+  },
+  {
+    "name": "Permias Spokane",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasspokane" },
+    "association": [],
+    "latitude": 47.6588,
+    "longitude": -117.4260
+  },
+  {
+    "name": "Permias Seattle",
+    "region": "West Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasseattle" },
+    "association": [],
+    "latitude": 47.6062,
+    "longitude": -122.3321
+  },
+  {
+    "name": "Permias Bellevue",
+    "region": "West Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@bellevueindoclub" },
+    "association": [],
+    "latitude": 47.6101,
+    "longitude": -122.2015
+  },
+  {
+    "name": "Permias Oregon",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@permiasoregon" },
+    "association": ["Oregon State University"],
+    "latitude": 44.5646,
+    "longitude": -123.2620
+  },
+  {
+    "name": "ISAUW",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@isauwhuskies" },
+    "association": ["University of Washington"],
+    "latitude": 47.6553,
+    "longitude": -122.3035
+  },
+  {
+    "name": "ISC Shoreline",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@iscshoreline" },
+    "association": ["Shoreline Community College"],
+    "latitude": 47.7551,
+    "longitude": -122.3088
+  },
+  {
+    "name": "Permias Bellingham",
+    "region": "West Coast II",
+    "level": "Regional",
+    "social_media": { "instagram": "@permiasbham" },
+    "association": [],
+    "latitude": 48.7596,
+    "longitude": -122.4883
+  },
+  {
+    "name": "Edmonds Indonesian Club",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@eicindoclub" },
+    "association": ["Edmonds College"],
+    "latitude": 47.8107,
+    "longitude": -122.3747
+  },
+  {
+    "name": "ISO at Green River College",
+    "region": "West Coast II",
+    "level": "University",
+    "social_media": { "instagram": "@isogrc" },
+    "association": ["Green River College"],
+    "latitude": 47.3705,
+    "longitude": -122.2157
+  }
+]

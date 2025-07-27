@@ -12,6 +12,15 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        // Region colors
+        'region-east-coast-i': '#2563eb',
+        'region-east-coast-ii': '#1d4ed8',
+        'region-east-coast-iii': '#3b82f6',
+        'region-midwest-i': '#059669',
+        'region-midwest-ii': '#10b981',
+        'region-south': '#f59e42',
+        'region-west-coast-i': '#f43f5e',
+        'region-west-coast-ii': '#eab308',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
@@ -38,4 +47,14 @@ export default {
     }),
   ],
   darkMode: 'class',
+  safelist: [
+    'bg-region-east-coast-i',
+    'bg-region-east-coast-ii',
+    'bg-region-east-coast-iii',
+    'bg-region-midwest-i',
+    'bg-region-midwest-ii',
+    'bg-region-south',
+    'bg-region-west-coast-i',
+    'bg-region-west-coast-ii',
+  ],
 };
