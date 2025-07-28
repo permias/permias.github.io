@@ -1,5 +1,16 @@
 ---
-const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [] } = Astro.props;
+import Headline from '~/components/ui/Headline.astro';
+
+const {
+  id,
+  title = "Visi Misi",
+  subtitle='Menyelaraskan peran dan tujuan PERMIAS Nasional demi mendukung mahasiswa Indonesia di Amerika Serikat.',
+  titleVisi = "Visi",
+  contentVisi = [],
+  titleMisi = "Misi",
+  contentMisi = []
+} = Astro.props;
+
 ---
 
 <section id={id} class="max-w-7xl mx-auto px-6 py-12">
@@ -9,7 +20,9 @@ const { id, titleVisi = "Visi", contentVisi, titleMisi = "Misi", contentMisi = [
       Berikut adalah visi dan misi dari periode kepengurusan PERMIAS Nasional saat ini yang menjadi panduan dan tujuan
       utama organisasi dalam mendukung pelajar Indonesia di Amerika Serikat.
     </p>
-  </div>
+  </div> -->
+  <Headline title={title} subtitle={subtitle} />
+
 
   <!-- Grid Layout -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

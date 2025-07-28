@@ -1,0 +1,164 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import PermiasTimeline from "~/components/widgets/TimelinePermias.astro";
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import VisiMisi from '~/components/widgets/VisiMisi.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Sejarah Kami',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="PERMIAS NASIONAL"
+  >
+    <Fragment slot="title">
+      Who Are We?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      The first PERMIAS chapter was established during the
+      <span class="font-semibold">First PERMIAS Congress in Washington, D.C., pada on December 24, 1961.</span> 
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="YXJGqoOUEjc" title="Why are you proud to be Indonesian? | Ignite Indonesia by PERMIAS Nasional" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+  </Hero>
+
+  <PermiasTimeline
+  id="permias-info"
+  title="PERMIAS Information"
+  subtitle="Explore the roles and history of PERMIAS in the United States."
+  boxes={[
+    "Although there were already Indonesian student organizations in other cities previously, such as PERPINDO in New York City or PERMABA in San Francisco, it was the establishment of PERMIAS that catalyzed the unification of all Indonesian students in the United States under a single organizational name.",
+    "Over time, as more Indonesians immigrated to the United States seeking better education, the expansion of PERMIAS chapters followed. This led to the establishment of PERMIAS Nasional, which serves as a coordinating body connecting all PERMIAS branches across the United States.",
+    "A PERMIAS chapter can function as an organization for all Indonesian students within a specific city or region, or as an Indonesian student association affiliated with a particular university. Campus-based clubs also have various names, such as Perhimpunan Mahasiswa Indonesia."
+  ]}
+/>
+
+  <!-- Features2 Widget ************** -->
+
+  <VisiMisi
+  id="visi-misi"
+  title="Vision and Mission"
+  subtitle="Aligning the role and objectives of PERMIAS Nasional to support Indonesian students in the United States."
+  titleVisi="Vision"
+  titleMisi="Mission"
+  contentVisi={[
+    "Sustainably expand opportunities for Indonesian students in the U.S. by cultivating a strong, empowered community rooted in collaboration and mutual support.",
+    "We strive to create a resilient network that continually opens new pathways for academic, personal, and professional growth, ensuring that Indonesian students can thrive and succeed in the U.S. and beyond.",
+  ]}
+  contentMisi={[
+    "Uphold an inclusive and welcoming network that enriches the experience of Indonesian students through dedicated programs and targeted initiatives.",
+    "We aim to foster a supportive environment that celebrates Indonesian culture, provides resources for personal and professional development, and ensures a well-rounded, holistic experience for students as they navigate their academic journeys in the U.S.",
+  ]}
+/>
+
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+  title="Our Service"
+  subtitle="PERMIAS Nasional provides events, partnerships, and career networking opportunities. We also collaborate with Indonesian government representatives in the United States to ensure the safety of our students."
+  items={[
+    {
+      title: 'Panel',
+      description:
+        'Join interactive panel discussions featuring industry experts, alumni, and government representatives to explore opportunities and challenges.',
+      icon: 'tabler:info-circle', 
+    },
+    {
+      title: 'Webinar',
+      description:
+        'Attend informative webinar that covers various topics, such as culture adaptation, career development, and academic success, designed specially for Indonesian students in the U.S.',
+      icon: 'tabler:video', 
+    },
+    {
+      title: 'Diskusi',
+      description:
+        'Participate in active discussions and QnA sessions to address concerns, share experiences, and strengthen community support among members.',
+      icon: 'tabler:messages', 
+    },
+  ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+ <!-- Stats Widget ******************
+
+  <Stats
+    title="Discover the impressive impact of Astrowind"
+    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    stats={[
+      { title: 'Downloads', amount: '182K' },
+      { title: 'Websites Launched', amount: '87' },
+      { title: 'User Ratings', amount: '4.8' },
+      { title: 'Satisfied Clients', amount: '116K' },
+    ]}
+  /> -->
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Partnerships & Collaborations"
+    subtitle="Thank you to our sponsors for your generous support. Your contribution is essential in realizing the vision and mission of PERMIAS Nasional in supporting Indonesian students in the United States."
+    icons={[]}
+    images={[
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+      {
+        src: '',
+        alt: '',
+      },
+    ]}
+  />
+
+</Layout>
