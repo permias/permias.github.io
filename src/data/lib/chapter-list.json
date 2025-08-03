@@ -571,7 +571,7 @@
     "region": "West Coast I",
     "level": "University",
     "social_media": { "instagram": "@permiaspasadena" },
-    "association": [],
+    "association": ["Pasadena City College"],
     "latitude": 34.1478,
     "longitude": -118.1445
   },
@@ -580,7 +580,7 @@
     "region": "West Coast I",
     "level": "Regional",
     "social_media": { "instagram": "@permiasla" },
-    "association": [],
+    "association": ["University of Southern California", "University of California, Los Angeles (UCLA)", "University of California, Irvine (UCI)", "Biola University", "Pasadena City College"],
     "latitude": 34.0522,
     "longitude": -118.2437
   },
@@ -778,7 +778,7 @@
     "region": "West Coast II",
     "level": "University",
     "social_media": { "instagram": "@permiasspokane" },
-    "association": [],
+    "association": ["Gonzaga University"],
     "latitude": 47.6588,
     "longitude": -117.4260
   },
@@ -787,7 +787,7 @@
     "region": "West Coast II",
     "level": "Regional",
     "social_media": { "instagram": "@permiasseattle" },
-    "association": [],
+    "association": ["University of Washington", "North Seattle College", "Edmonds College", "Shoreline Community College", "Bellevue College", "Green River College"],
     "latitude": 47.6062,
     "longitude": -122.3321
   },
@@ -796,7 +796,7 @@
     "region": "West Coast II",
     "level": "Regional",
     "social_media": { "instagram": "@bellevueindoclub" },
-    "association": [],
+    "association": ["Bellevue College"],
     "latitude": 47.6101,
     "longitude": -122.2015
   },
