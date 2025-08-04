@@ -33,7 +33,17 @@
       "instagram": "@permiasmass"
     },
     "association": [
-      
+      "Babson College",
+      "Bentley University",
+      "Boston College",
+      "Boston University",
+      "Harvard University",
+      "Massachusetts General Hospital Institute of Health",
+      "Massachusetts Institute of Technology",
+      "Northeastern University",
+      "Suffolk University",
+      "University of Massachusetts Amherst",
+      "University of Massachusetts Boston"
     ],
     "latitude": 42.4072,
     "longitude": -71.3824
@@ -571,7 +581,7 @@
     "region": "West Coast I",
     "level": "University",
     "social_media": { "instagram": "@permiaspasadena" },
-    "association": [],
+    "association": ["Pasadena City College"],
     "latitude": 34.1478,
     "longitude": -118.1445
   },
@@ -580,7 +590,13 @@
     "region": "West Coast I",
     "level": "Regional",
     "social_media": { "instagram": "@permiasla" },
-    "association": [],
+    "association": [
+      "Biola University",
+      "Pasadena City College",
+      "University of California, Irvine (UCI)",
+      "University of California, Los Angeles (UCLA)",
+      "University of Southern California"
+    ],
     "latitude": 34.0522,
     "longitude": -118.2437
   },
@@ -778,7 +794,7 @@
     "region": "West Coast II",
     "level": "University",
     "social_media": { "instagram": "@permiasspokane" },
-    "association": [],
+    "association": ["Gonzaga University"],
     "latitude": 47.6588,
     "longitude": -117.4260
   },
@@ -787,7 +803,14 @@
     "region": "West Coast II",
     "level": "Regional",
     "social_media": { "instagram": "@permiasseattle" },
-    "association": [],
+    "association": [
+      "Bellevue College",
+      "Edmonds College",
+      "Green River College",
+      "North Seattle College",
+      "Shoreline Community College",
+      "University of Washington"
+    ],
     "latitude": 47.6062,
     "longitude": -122.3321
   },
@@ -796,7 +819,7 @@
     "region": "West Coast II",
     "level": "Regional",
     "social_media": { "instagram": "@bellevueindoclub" },
-    "association": [],
+    "association": ["Bellevue College"],
     "latitude": 47.6101,
     "longitude": -122.2015
   },
